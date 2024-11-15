@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  14 NOV 2024 23:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  14 NOV 2024 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1101,8 +1101,8 @@ Overfull \hbox (18.2668pt too wide) in paragraph at lines 1281--1284
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1341.
  [10]
-Overfull \hbox (10.35667pt too wide) in paragraph at lines 1382--1383
-[][]\T1/cmr/m/it/10.95 Consider
+Overfull \hbox (4.18524pt too wide) in paragraph at lines 1382--1383
+[][]\T1/cmr/m/it/10.95 Given a
  []
 
 
@@ -1437,7 +1437,7 @@ er/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti109
 5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/
 texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/20
 23/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on sample.pdf (71 pages, 1142839 bytes).
+Output written on sample.pdf (71 pages, 1142842 bytes).
 PDF statistics:
  2118 PDF objects out of 2487 (max. 8388607)
  1848 compressed objects within 19 object streams

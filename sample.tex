@@ -1379,7 +1379,7 @@ The second mechanism is based on discrete Laplace noise. We say that a random va
 The second mechanism is similar to the first one but it replaces continuous Laplace noise with discrete Laplace noise. 
 
 \begin{definition}[Discrete Laplace mechanism for multinomial data: \texttt{DiscLapU}]\label{def:DiscLapU_formal}
-	Consider a pooled raw multinomial sample $\{X_i\}_{i \in [n]}$ with $\alphabetSize$ categories. Fix the privacy level $\privacyParameter>0$. Each data owner adds noise to their data point, with the noise distribution parametrized by
+	Given a pooled raw multinomial sample $\{X_i\}_{i \in [n]}$ with $\alphabetSize$ categories, fix the privacy level $\privacyParameter>0$. Each data owner adds noise to their data point, with the noise distribution parametrized by
 	$$\discLapUParam := e^{
 		-
 		\frac{\privacyParameter}{2\sqrt{\alphabetSize}}
