@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  14 NOV 2024 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  14 NOV 2024 23:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,276 +939,6 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen326
 \Gm@dimlist=\toks47
 )
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 \newcommand{\data set}{{\cal D}}
-                                     
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   e
-l.98 \newcommand{\data set}{{\cal D}}
-                                     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! You already have nine parameters.
-\reserved@a ... \expandafter \data \reserved@b #10
-                                                  e{
-l.98 \newcommand{\data set}{{\cal D}}
-                                     
-I'm going to ignore the # sign you just used,
-as well as the token that followed it.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.645 }
-       
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   e
-l.645 }
-       
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! You already have nine parameters.
-\reserved@a ...er \priVecIndepdata \reserved@b #10
-                                                  e{
-l.645 }
-       
-I'm going to ignore the # sign you just used,
-as well as the token that followed it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.645 }
-       
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 645
-.
-(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 645
-.
-
-(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 64
-5.
-
-(c:/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 645.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 645.
-
-! Undefined control sequence.
-<argument>  \left \{ \priVecIndep 
-                                  \right \}_{i=1}^n 
-l.645 }
-       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Extra }, or forgotten $.
-\@argdef ...definable #1{\@yargdef #1\@ne {#2}{#3}
-                                                  }
-l.645 }
-       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@argdef ...efinable #1{\@yargdef #1\@ne {#2}{#3}}
-                                                  
-l.645 }
-       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.646 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.729 ...tTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   e
-l.729 ...tTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! You already have nine parameters.
-\reserved@a ... \expandafter \data \reserved@b #10
-                                                  e{
-l.729 ...tTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
-                                                  
-I'm going to ignore the # sign you just used,
-as well as the token that followed it.
-
-
-! LaTeX Error: \mathcal allowed only in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.729 ...tTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.729 ...tTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@argdef ...definable #1{\@yargdef #1\@ne {#2}{#3}
-                                                  }
-l.729 ...tTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@argdef ...efinable #1{\@yargdef #1\@ne {#2}{#3}}
-                                                  
-l.729 ...tTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: Command \data already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.730 ...tTwosampleZ}{\mathcal{Z}_{\sampleSize_2}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   e
-l.730 ...tTwosampleZ}{\mathcal{Z}_{\sampleSize_2}}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! You already have nine parameters.
-\reserved@a ... \expandafter \data \reserved@b #10
-                                                  e{
-l.730 ...tTwosampleZ}{\mathcal{Z}_{\sampleSize_2}}
-                                                  
-I'm going to ignore the # sign you just used,
-as well as the token that followed it.
-
-
-! LaTeX Error: Command \data already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.731 \newcommand{\data setIndep}{\mathcal{X}_{n}}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   e
-l.731 \newcommand{\data setIndep}{\mathcal{X}_{n}}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! You already have nine parameters.
-\reserved@a ... \expandafter \data \reserved@b #10
-                                                  e{
-l.731 \newcommand{\data setIndep}{\mathcal{X}_{n}}
-                                                  
-I'm going to ignore the # sign you just used,
-as well as the token that followed it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.733 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 (c:/texlive/2023/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2023/07/24 v2.0c lastpage: 2.09 or 2e? (HMM)
 
@@ -1222,24 +952,24 @@ Package: lastpagemodern 2023-07-24 v2.0c Refers to last page's name (HMM; JPG)
 )) (./sample.aux)
 \openout1 = `sample.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 930.
-LaTeX Font Info:    ... okay on input line 930.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 930.
-LaTeX Font Info:    ... okay on input line 930.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 930.
-LaTeX Font Info:    ... okay on input line 930.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 930.
-LaTeX Font Info:    ... okay on input line 930.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 930.
-LaTeX Font Info:    ... okay on input line 930.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 930.
-LaTeX Font Info:    ... okay on input line 930.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 930.
-LaTeX Font Info:    ... okay on input line 930.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 930.
-LaTeX Font Info:    ... okay on input line 930.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 930.
-LaTeX Font Info:    ... okay on input line 930.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 925.
+LaTeX Font Info:    ... okay on input line 925.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 925.
+LaTeX Font Info:    ... okay on input line 925.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 925.
+LaTeX Font Info:    ... okay on input line 925.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 925.
+LaTeX Font Info:    ... okay on input line 925.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 925.
+LaTeX Font Info:    ... okay on input line 925.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 925.
+LaTeX Font Info:    ... okay on input line 925.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 925.
+LaTeX Font Info:    ... okay on input line 925.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 925.
+LaTeX Font Info:    ... okay on input line 925.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 925.
+LaTeX Font Info:    ... okay on input line 925.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -1268,7 +998,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 930.
+Package hyperref Info: Link coloring ON on input line 925.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1305,82 +1035,110 @@ Package hyperref Info: Link coloring ON on input line 930.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 9
-56.
+51.
 (c:/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Overfull \vbox (341.46503pt too high) has occurred while \output is active []
+Underfull \vbox (badness 3657) has occurred while \output is active []
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 966
+.
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 966
+.
+
+(c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 96
+6.
+
+(c:/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 966.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 966.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 990.
-
-[1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/202
-3/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 966.
+ [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/20
+23/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 
 {c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (2.89594pt too wide) in paragraph at lines 997--998
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Overfull \hbox (2.89594pt too wide) in paragraph at lines 992--993
 []\T1/cmr/m/n/10.95 There are also a few re-cent pa-pers from the statis-tics c
 om-mu-nity that ex-plore uni-vari-ate goodness-
  []
 
-[2]
-Overfull \hbox (6.37419pt too wide) in paragraph at lines 999--1009
+
+Overfull \hbox (6.37419pt too wide) in paragraph at lines 994--1004
 \T1/cmr/m/n/10.95 Previous work on hy-poth-e-sis test-ing un-der lo-cal dif-fer
 -en-tial pri-vacy has pri-mar-ily fo-cused on goodness-
  []
 
+[3]
 
-Underfull \vbox (badness 1377) has occurred while \output is active []
-
- [3]
-
-Package caption Warning: \label without proper reference on input line 1033.
+Package caption Warning: \label without proper reference on input line 1028.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `table:rates' on page 4 undefined on input line 1017.
+LaTeX Warning: Reference `table:rates' on page 4 undefined on input line 1012.
 
-[4]
+
+Underfull \vbox (badness 1735) has occurred while \output is active []
+
+ [4]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 1036.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 1031.
+
+Underfull \vbox (badness 1478) has occurred while \output is active []
+
+ [5]
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 1
-100.
- (c:/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+095.
+
+(c:/texlive/2023/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
-) [5] [6]
-[7] [8]
-Overfull \hbox (18.2668pt too wide) in paragraph at lines 1287--1290
+) [6] [7] [8]
+Overfull \hbox (18.2668pt too wide) in paragraph at lines 1282--1285
 [][]\T1/cmr/m/it/10.95 There ex-ist pos-
  []
 
 [9]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1347.
-
-Overfull \hbox (10.35667pt too wide) in paragraph at lines 1388--1389
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1342.
+ [10]
+Overfull \hbox (10.35667pt too wide) in paragraph at lines 1383--1384
 [][]\T1/cmr/m/it/10.95 Consider
  []
 
-[10]
-Overfull \hbox (5.63739pt too wide) in paragraph at lines 1413--1415
+
+Overfull \hbox (5.63739pt too wide) in paragraph at lines 1408--1410
 [][]
  []
 
 
-Overfull \hbox (1.45139pt too wide) in paragraph at lines 1413--1415
+Overfull \hbox (1.45139pt too wide) in paragraph at lines 1408--1410
 \OML/cmm/m/it/10.95  > \OT1/cmr/m/n/10.95 0$\T1/cmr/m/it/10.95 . Each data own
 er per-turbs their data point, re-sult-ing in the pri-va-tized sam-ple $\OMS/cm
 sy/m/n/10.95 f[]g[] \OT1/cmr/m/n/10.95 =
  []
 
 [11] [12] [13]
-Overfull \hbox (4.0596pt too wide) in paragraph at lines 1642--1650
+Overfull \hbox (4.0596pt too wide) in paragraph at lines 1637--1645
 [][]\T1/cmr/m/it/10.95 Assume $\OML/cmm/m/it/10.95 n[][] \OMS/cmsy/m/n/10.95 ^
 ^U
  []
 
 
-Overfull \hbox (9.92488pt too wide) in paragraph at lines 1642--1650
+Overfull \hbox (9.92488pt too wide) in paragraph at lines 1637--1645
 \T1/cmr/m/it/10.95 dis-tri-bu-tion class $\OMS/cmsy/m/n/10.95 P$ \T1/cmr/m/it/1
 0.95 is $\OMS/cmsy/m/n/10.95 P[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/c
 mr/m/n/10.95 )$\T1/cmr/m/it/10.95 , there ex-ist pos-i-tive con-stants $\OML/cm
@@ -1391,81 +1149,88 @@ R; s; d\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^Q
  []
 
 [14] [15]
-Overfull \hbox (15.19453pt too wide) in paragraph at lines 1806--1814
+Overfull \hbox (15.19453pt too wide) in paragraph at lines 1801--1809
 [][]\T1/cmr/m/it/10.95 Consider
  []
 
-[16]
-<typeone.pdf, id=658, 526.61642pt x 399.16327pt>
+[16] [17]
+<typeone.pdf, id=663, 526.61642pt x 399.16327pt>
 File: typeone.pdf Graphic file (type pdf)
 <use typeone.pdf>
-Package pdftex.def Info: typeone.pdf  used on input line 1905.
+Package pdftex.def Info: typeone.pdf  used on input line 1900.
 (pdftex.def)             Requested size: 446.26582pt x 338.26712pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1908--1908
+Underfull \hbox (badness 10000) in paragraph at lines 1903--1903
 \T1/cmr/m/n/10.95 and meth-ods cal-i-brated through asymp-totic chi-square null
  dis-tri-bu-tion
  []
 
 
-Underfull \hbox (badness 2726) in paragraph at lines 1908--1908
+Underfull \hbox (badness 2726) in paragraph at lines 1903--1903
 \T1/cmr/m/n/10.95 (\T1/cmtt/m/n/10.95 RAPPOR\T1/cmr/m/n/10.95 +\T1/cmtt/m/n/10.
 95 ProjChi \T1/cmr/m/n/10.95 and \T1/cmtt/m/n/10.95 GenRR\T1/cmr/m/n/10.95 +\T1
 /cmtt/m/n/10.95 Chi\T1/cmr/m/n/10.95 ), across con-fig-u-ra-tions of uni-form (
 top row)
  []
 
-[17] [18 <./typeone.pdf>]
-<perturbunif.pdf, id=720, 572.04916pt x 596.28674pt>
+
+Underfull \vbox (badness 3209) has occurred while \output is active []
+
+ [18 <./typeone.pdf>]
+<perturbunif.pdf, id=719, 572.04916pt x 596.28674pt>
 File: perturbunif.pdf Graphic file (type pdf)
 <use perturbunif.pdf>
-Package pdftex.def Info: perturbunif.pdf  used on input line 1929.
+Package pdftex.def Info: perturbunif.pdf  used on input line 1924.
 (pdftex.def)             Requested size: 446.26582pt x 465.18367pt.
-<density_location.pdf, id=725, 565.87914pt x 596.28674pt>
+<density_location.pdf, id=724, 565.87914pt x 596.28674pt>
 File: density_location.pdf Graphic file (type pdf)
 <use density_location.pdf>
-Package pdftex.def Info: density_location.pdf  used on input line 1986.
+Package pdftex.def Info: density_location.pdf  used on input line 1981.
 (pdftex.def)             Requested size: 446.26582pt x 470.2425pt.
  [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20 <./perturbunif.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4582) has occurred while \output is active []
 
- [21 <./density_location.pdf>] [22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 2097--2100
+ [21 <./density_location.pdf>]
+Underfull \vbox (badness 7099) has occurred while \output is active []
+
+ [22]
+[23] [24]
+Underfull \hbox (badness 10000) in paragraph at lines 2092--2095
 
  []
 
 
-Overfull \hbox (1.96124pt too wide) detected at line 2252
+Overfull \hbox (1.96124pt too wide) detected at line 2247
 []
  []
 
-[24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 2477--2485
+[25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 2472--2480
 
  []
 
-[26] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 2810--2813
+[27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 2805--2808
 
- []
-
-[28]
-Overfull \hbox (3.44363pt too wide) in paragraph at lines 2856--2880
-[]$[] \OMS/cmsy/m/n/10.95 ! \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :$ 
  []
 
 [29]
-Overfull \hbox (12.8158pt too wide) in paragraph at lines 3070--3076
+Overfull \hbox (3.44363pt too wide) in paragraph at lines 2851--2875
+[]$[] \OMS/cmsy/m/n/10.95 ! \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :$ 
+ []
+
+[30]
+Overfull \hbox (12.8158pt too wide) in paragraph at lines 3065--3071
 [][]\T1/cmr/m/it/10.95 Assume the set-tings of The-o-rem [][]3[][]. For each of
  the mech-a-nisms $\OMS/cmsy/m/n/10.95 f[]\OML/cmm/m/it/10.95 ; []; []\OMS/cmsy
 /m/n/10.95 g$\T1/cmr/m/it/10.95 ,
  []
 
-[30]
-Overfull \hbox (8.39293pt too wide) in paragraph at lines 3233--3262
+[31]
+Overfull \hbox (8.39293pt too wide) in paragraph at lines 3228--3257
 \T1/cmr/m/n/10.95 tional ex-pec-ta-tion terms. Re-call the no-ta-tion $\OML/cmm
 /m/it/10.95 M[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 P; Q\OT1/cmr/m/n/10.95 )
  = [][][\U/msb/m/n/10.95 E\OMS/cmsy/m/n/10.95 f[]\OT1/cmr/m/n/10.95 ([]\OML/cmm
@@ -1474,12 +1239,12 @@ Overfull \hbox (8.39293pt too wide) in paragraph at lines 3233--3262
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3233--3262
+Underfull \hbox (badness 10000) in paragraph at lines 3228--3257
 
  []
 
-[31]
-Overfull \hbox (40.3964pt too wide) in paragraph at lines 3496--3500
+[32]
+Overfull \hbox (40.3964pt too wide) in paragraph at lines 3491--3495
 \T1/cmr/m/n/10.95 Combining the up-per bound re-sults of [] and [], and keep-in
 g in mind that $\OML/cmm/m/it/10.95 b \OT1/cmr/m/n/10.95 = []\OMS/cmsy/m/n/10.9
 5 fk\OT1/cmr/bx/n/10.95 p[]\OMS/cmsy/m/n/10.95 k[]\OML/cmm/m/it/10.95 ; \OMS/cm
@@ -1490,99 +1255,99 @@ sy/m/n/10.95 k\OT1/cmr/bx/n/10.95 p[]\OMS/cmsy/m/n/10.95 k[]g$\T1/cmr/m/n/10.95
 
 Underfull \vbox (badness 1490) has occurred while \output is active []
 
- [32]
-Underfull \hbox (badness 10000) in paragraph at lines 3710--3727
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 3705--3722
 
  []
 
-[33] [34]
-Overfull \hbox (12.26329pt too wide) detected at line 4169
-[]
- []
-
-[35]
-Overfull \hbox (24.23808pt too wide) detected at line 4433
-[]
- []
-
-
-Overfull \hbox (24.64873pt too wide) detected at line 4593
+[34] [35]
+Overfull \hbox (12.26329pt too wide) detected at line 4164
 []
  []
 
 [36]
-Overfull \hbox (41.8316pt too wide) detected at line 4705
+Overfull \hbox (24.23808pt too wide) detected at line 4428
 []
  []
 
 
-Overfull \hbox (38.28355pt too wide) detected at line 4964
+Overfull \hbox (24.64873pt too wide) detected at line 4588
+[]
+ []
+
+[37]
+Overfull \hbox (41.8316pt too wide) detected at line 4700
+[]
+ []
+
+
+Overfull \hbox (38.28355pt too wide) detected at line 4959
 []
  []
 
 
 Underfull \vbox (badness 1184) has occurred while \output is active []
 
- [37]
-Overfull \hbox (50.7678pt too wide) detected at line 5101
+ [38]
+Overfull \hbox (50.7678pt too wide) detected at line 5096
 []
  []
 
-[38] [39] [40] [41]
-Overfull \hbox (4.28786pt too wide) in paragraph at lines 5765--5770
+[39] [40] [41] [42]
+Overfull \hbox (4.28786pt too wide) in paragraph at lines 5760--5765
 [][]\T1/cmr/m/it/10.95 Consider the Haar wavelet ba-sis on $\OT1/cmr/m/n/10.95 
 [0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1][]$
  []
 
-[42]
-Overfull \hbox (0.61688pt too wide) in paragraph at lines 5867--5869
+[43]
+Overfull \hbox (0.61688pt too wide) in paragraph at lines 5862--5864
 [][]\T1/cmr/m/it/10.95 With prob-a-bil-ity at least $\OT1/cmr/m/n/10.95 1 \OMS/
 cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^M$\T1/cmr/m/it/10.95 , a func-tion dra
 wn from $\OML/cmm/m/it/10.95 ^^W[]$ \T1/cmr/m/it/10.95 lies in $\OMS/cmsy/m/n/1
 0.95 B[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 )$
  []
 
-[43] [44] [45]
+[44] [45] [46]
 Underfull \vbox (badness 1924) has occurred while \output is active []
 
- [46]
-Overfull \hbox (8.70413pt too wide) detected at line 6383
+ [47]
+Overfull \hbox (8.70413pt too wide) detected at line 6378
 []
  []
 
-[47]
-Overfull \hbox (85.92834pt too wide) in paragraph at lines 6461--6485
+[48]
+Overfull \hbox (85.92834pt too wide) in paragraph at lines 6456--6480
 \T1/cmr/m/n/10.95 Under the event $[][] \OML/cmm/m/it/10.95 A[]$ \T1/cmr/m/n/10
 .95 as de-fined in [], the deriva-tive above is bounded by $\OML/cmm/m/it/10.95
  ^^T[]\OMS/cmsy/m/n/10.95 jjj\OML/cmm/m/it/10.95 '[]\OMS/cmsy/m/n/10.95 jjj[]\O
 ML/cmm/m/it/10.95 ![]$\T1/cmr/m/n/10.95 .
  []
 
-[48] [49] [50]
-Overfull \hbox (1.0028pt too wide) in paragraph at lines 7120--7124
+[49] [50] [51]
+Overfull \hbox (1.0028pt too wide) in paragraph at lines 7115--7119
 \OML/cmm/m/it/10.95  > \OT1/cmr/m/n/10.95 0$\T1/cmr/m/it/10.95 . Each data own
 er per-turbs their data point, re-sult-ing in the pri-va-tized sam-ple $\OMS/cm
 sy/m/n/10.95 f[]g[] \OT1/cmr/m/n/10.95 =
  []
 
-[51] [52]
-Overfull \hbox (0.47168pt too wide) in paragraph at lines 7299--7303
+[52] [53]
+Overfull \hbox (0.47168pt too wide) in paragraph at lines 7294--7298
 [][]\T1/cmr/m/it/10.95 Assume the same multi-
  []
 
-<power24.pdf, id=1463, 572.0592pt x 219.34346pt>
+<power24.pdf, id=1466, 572.0592pt x 219.34346pt>
 File: power24.pdf Graphic file (type pdf)
 <use power24.pdf>
-Package pdftex.def Info: power24.pdf  used on input line 7325.
+Package pdftex.def Info: power24.pdf  used on input line 7320.
 (pdftex.def)             Requested size: 446.26582pt x 171.11731pt.
-[53]
-<density_scale.pdf, id=1478, 572.05522pt x 596.28674pt>
+[54]
+<density_scale.pdf, id=1481, 572.05522pt x 596.28674pt>
 File: density_scale.pdf Graphic file (type pdf)
 <use density_scale.pdf>
-Package pdftex.def Info: density_scale.pdf  used on input line 7369.
+Package pdftex.def Info: density_scale.pdf  used on input line 7364.
 (pdftex.def)             Requested size: 446.26582pt x 465.18367pt.
 
-Overfull \hbox (14.83229pt too wide) in paragraph at lines 7379--7380
+Overfull \hbox (14.83229pt too wide) in paragraph at lines 7374--7375
 \T1/cmr/m/n/10.95 This sec-tion presents the proof of chi-square asymp-totic nu
 ll dis-tri-bu-tions of $[]$ and $[]$
  []
@@ -1590,13 +1355,13 @@ ll dis-tri-bu-tions of $[]$ and $[]$
 
 Underfull \vbox (badness 4686) has occurred while \output is active []
 
- [54 <./power24.pdf>] [55 <./density_scale.pdf>]
-Overfull \hbox (11.3303pt too wide) detected at line 7556
+ [55 <./power24.pdf>] [56 <./density_scale.pdf>]
+Overfull \hbox (11.3303pt too wide) detected at line 7551
 []
  []
 
-[56] [57] [58] [59] [60]
-Underfull \hbox (badness 2837) in paragraph at lines 7979--7998
+[57] [58] [59] [60] [61]
+Underfull \hbox (badness 2837) in paragraph at lines 7974--7993
 \T1/cmr/m/n/10.95 Utilizing the equal-i-ties $[]\OT1/cmr/bx/n/10.95 p[]p[][][] 
 \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 k\OT1/cmr/bx/n/10.95 p[]\OMS/cmsy/m/n/
 10.95 k[]\OT1/cmr/bx/n/10.95 p[]p[]$\T1/cmr/m/n/10.95 , $[][]\OT1/cmr/bx/n/10.9
@@ -1605,12 +1370,12 @@ S/cmsy/m/n/10.95 k[]$\T1/cmr/m/n/10.95 , and
  []
 
 
-Overfull \hbox (22.91937pt too wide) detected at line 8075
+Overfull \hbox (22.91937pt too wide) detected at line 8070
 [][][][] \OT1/cmr/m/n/10.95 = []\OML/cmm/m/it/10.95 ;
  []
 
-[61] [62]
-Overfull \hbox (12.86353pt too wide) detected at line 8473
+[62] [63]
+Overfull \hbox (12.86353pt too wide) detected at line 8468
 \OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 p[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/bx
 /n/10.95 p[]\OT1/cmr/m/n/10.95 )[]^^F[](\OT1/cmr/bx/n/10.95 p[] \OMS/cmsy/m/n/1
 0.95 ^^@ \OT1/cmr/bx/n/10.95 p[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 w[]\
@@ -1624,12 +1389,12 @@ mr/m/n/10.95 )[]\OT1/cmr/bx/n/10.95 p[]p[]\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.
 cmm/m/it/10.95 :
  []
 
-[63]
-Underfull \hbox (badness 10000) in paragraph at lines 8712--8714
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 8707--8709
 
  []
 
-(./sample.bbl [64] [65] [66] [67] [68] [69]) [70]
+(./sample.bbl [65] [66] [67] [68] [69] [70]) [71]
 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./sample.aux)
@@ -1641,73 +1406,59 @@ L3 programming layer <2023-08-11>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
-(\end occurred inside a group at level 4)
-
-### simple group (level 4) entered at line 729 ({)
-### simple group (level 3) entered at line 729 ({)
-### simple group (level 2) entered at line 645 ({)
-### simple group (level 1) entered at line 645 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 28679 strings out of 475188
- 519319 string characters out of 5767814
+ 28674 strings out of 475188
+ 519227 string characters out of 5767814
  1956248 words of memory out of 5000000
- 49026 multiletter control sequences out of 15000+600000
+ 49022 multiletter control sequences out of 15000+600000
  586779 words of font info for 117 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,20n,93p,1847b,2300s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{page.71} has been referenced but does not exist, re
-placed by a fixed one
-
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx6.pfb><c:/texlive/2023/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
-/cmextra/cmex8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texli
-ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/
-amsfonts/cmextra/cmmib8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:
-/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/20
-23/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/202
-3/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb><c:/texlive/2023/texmf
--dist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/texlive/2023/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fonts/
-type1/public/cm-super/sfbx1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publ
-ic/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-supe
-r/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440
-.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/t
-exlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/202
-3/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-di
-st/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2023/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
-c/cm-super/sftc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super
-/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1095.
-pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/te
-xlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2023
-/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on sample.pdf (70 pages, 1143936 bytes).
+ 90i,20n,93p,1847b,810s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/202
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx6.pfb><c:/texlive/2023/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfon
+ts/cmextra/cmex8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publi
+c/amsfonts/cmextra/cmmib8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/
+2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2
+023/texmf-dist/fonts/type1/public/doublestroke/dsrom10.pfb><c:/texlive/2023/tex
+mf-dist/fonts/type1/public/doublestroke/dsrom8.pfb><c:/texlive/2023/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/font
+s/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pu
+blic/cm-super/sfbx1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-su
+per/sfbx1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx14
+40.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:
+/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb><c:/texlive/2
+023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-
+dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2023/texmf-dist/fonts
+/type1/public/cm-super/sfrm1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/pub
+lic/cm-super/sftc1095.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-sup
+er/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti109
+5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/
+texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/20
+23/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on sample.pdf (71 pages, 1143399 bytes).
 PDF statistics:
- 2121 PDF objects out of 2487 (max. 8388607)
- 1852 compressed objects within 19 object streams
- 388 named destinations out of 1000 (max. 500000)
+ 2123 PDF objects out of 2487 (max. 8388607)
+ 1853 compressed objects within 19 object streams
+ 387 named destinations out of 1000 (max. 500000)
  366 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -95,8 +95,8 @@
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 \newcommand{\lbr}[1][6]{\displaybreak[1]\\[#1pt]}% a command to simplify optional line break in the midst of an equation, with a default value of 6pt
 
-\newcommand{\data set}{{\cal D}}
-\newcommand{\fracpartial}[2]{\frac{\partial #1}{\partial  #2}}
+
+
 %special vectors and matrices
 \newcommand{\vecOne}[1]{\mathbf{1}_{#1}}
 \newcommand{\vecZero}[1]{\mathbf{0}_{#1}}
@@ -638,11 +638,6 @@
 	\right)
 }
 
-\newcommand{\priVecIndepdata set}{
-	\left\{
-	\priVecIndep
-	\right\}_{i=1}^n
-}
 
 %kappas
 \newcommand{\kappaIndepHalf}[1]{
@@ -726,9 +721,9 @@
 \newcommand{\sigmaAlgebraYPriv}{\mathcal{F}_{i}^\Phi}
 
 % data sets
-\newcommand{\data setTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
-\newcommand{\data setTwosampleZ}{\mathcal{Z}_{\sampleSize_2}}
-\newcommand{\data setIndep}{\mathcal{X}_{n}}
+\newcommand{\datasetTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
+\newcommand{\datasetTwosampleZ}{\mathcal{Z}_{\sampleSize_2}}
+\newcommand{\datasetIndep}{\mathcal{X}_{n}}
 %algorithm names
 
 
@@ -967,20 +962,20 @@ We explore the trade-off between privacy and statistical utility in private two-
 
 \section{Introduction}\label{section_intro}
 %new intro start
-Large-scale internet services such as Netflix and Amazon collect sensitive data from massive user bases, allowing companies to conduct cost-effective randomized experiments by assigning users to two different user interfaces or marketing campaigns. By testing whether the resulting two independent sets of samples originate from the same distribution{---}a procedure known as A/B testing or two-sample testing{---}companies can statistically assess the impact of new interfaces or campaigns on various user behaviors. However, the sensitivity of detailed personal data raises substantial privacy concerns in data analysis. Since privacy protection inherently conceals some of the information in the data and in turn compromises statistical utility, it is crucial to characterize and balance the trade-off between statistical utility and data privacy. Differential privacy (DP;~\citet{CynthiaDwork2006CalibratingAnalysis}) provides a rigorous framework for this trade-off, defining data privacy as a mathematical concept that supports such balancing.
+Large-scale internet services such as Netflix and Amazon collect sensitive data from massive user bases, allowing companies to conduct cost-effective randomized experiments by assigning users to two different user interfaces or marketing campaigns. By testing whether the resulting two independent sets of samples originate from the same distribution{---}a procedure known as A/B testing or two-sample testing{---}companies can statistically assess the impact of new interfaces or campaigns on various user behaviors. However, the sensitivity of detailed personal data raises substantial privacy concerns in data analysis. Since privacy protection inherently conceals some of the information in the data and in turn compromises statistical utility, it is crucial to characterize and balance the trade-off between statistical utility and data privacy. Differential privacy \citep[DP;][]{CynthiaDwork2006CalibratingAnalysis} provides a rigorous framework for this trade-off, defining data privacy as a mathematical concept that supports such balancing.
 
 We briefly review two notions of DP: central and local DP.
 The central DP constraint assumes that a trusted data curator (or distributor) has access to the entire original data set and calculates a noisy statistical result. This centralized approach requires that the probability of any event remains essentially the same when a single data entry is arbitrarily perturbed.
-Under this constraint, one cannot reliably extract any individual-level information from the noisy statistical result. In contrast, data owners do not place trust in the curator in the local DP constraint (LDP; \citet{Kasiviswanathan2008WhatPrivately}). Instead, each data owner independently reports a noisy version of their data. This more stringent local constraint inevitably impairs statistical utility more than the central constraint. However, it provides a higher level of privacy and separates the data curator from the responsibility for disclosure risk.
+Under this constraint, one cannot reliably extract any individual-level information from the noisy statistical result. In contrast, data owners do not place trust in the curator in the local DP constraint  \citep[LDP;][]{Kasiviswanathan2008WhatPrivately}. Instead, each data owner independently reports a noisy version of their data. This more stringent local constraint inevitably impairs statistical utility more than the central constraint. However, it provides a higher level of privacy and separates the data curator from the responsibility for disclosure risk.
 
 These benefits have driven widespread adoption of the LDP framework in the internet-scale deployment of data analysis under privacy, such as in
-Microsoft~\citep{Ding2017CollectingPrivately},
-Google~\citep{erlingsson_rappor_2014},
-Apple~\citep{Apple2017Privacy},
-and Uber~\citep{Near2017Uber}. With the massive user bases, these companies require stringent privacy protections, while also having the capacity to obtain large samples which allows statistically meaningful analyses within strong privacy constraints. Various implementations of LDP in industrial applications has naturally spurred a substantial body of work~\citep{Acharya2021DifferentiallyCam, Duchi2018MinimaxEstimation, Lam-Weil2021MinimaxConstraint, Lalanne2023on, Tony2021DP}, examining the intrinsic trade-off between privacy and statistical utility in various settings. This paper contributes to this body of work by exploring this trade-off in the context of the two-sample testing problem. 
+Apple \citep{Apple2017Privacy},
+Google \citep{erlingsson_rappor_2014},
+Microsoft \citep{Ding2017CollectingPrivately},
+and Uber \citep{Near2017Uber}. With the massive user bases, these companies require stringent privacy protections, while also having the capacity to obtain large samples which allows statistically meaningful analyses within strong privacy constraints. Various implementations of LDP in industrial applications has naturally spurred a substantial body of work~\citep{Acharya2021DifferentiallyCam, Duchi2018MinimaxEstimation, Lam-Weil2021MinimaxConstraint, Lalanne2023on, Tony2021DP}, examining the intrinsic trade-off between privacy and statistical utility in various settings. This paper contributes to this body of work by exploring this trade-off in the context of the two-sample testing problem. 
 
 The two-sample testing problem, which originates from the classical two-sample $t$-test~\citep{Student1908Twosample}, has gained renewed interest in recent years due to the emergence of high-dimensional and complex data.  
-Notably, several novel methodological approaches have been developed including kernel-based tests~\citep{Gretton2009FastKernel, Gretton2012ATest}, distance-based tests~\citep{Szekely2004Energy, Szekely2005Energy} and regression/classification-based tests~\citep{kim2019,kim2021}, which have demonstrated promising capabilities in dealing with modern data sets.
+Notably, several novel methodological approaches have been developed including kernel-based tests~\citep{Gretton2009FastKernel, Gretton2012ATest}, distance-based tests~\citep{Szekely2004Energy} and regression/classification-based tests~\citep{kim2019,kim2021}, which have demonstrated promising capabilities in dealing with modern data sets.
 On the theoretical front, researchers have explored the fundamental limit of this problem through the lens of minimax analysis both in the statistics~\citep[e.g.,][]{Arias-Castro2018RememberDimension, kim_minimax_2022, Schrab2021MMDTest} and computer science~\citep[e.g.,][]{Batu2000NonprivateTwosample, Chan2014Nonprivate, Diakonikolas2016Nonprivate, Goldreich2000Nonprivate} literature.
 In addition to the methodological and theoretical advancements, the topic has found contemporary applications such as in education research \citep{Rabin2019ModelingTests}, network traffic analysis \citep{Kohout2018NetworkTest}, and audio segmentation \citep{Harchaoui2009ASegmentation}.
 Despite its long history and fundamental roles in practice, most of the existing work on two-sample testing has focused on non-private settings with a few exceptions. Exceptions include private versions of

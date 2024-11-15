@@ -1,4 +1,4 @@
-\begin{thebibliography}{80}
+\begin{thebibliography}{79}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -511,17 +511,10 @@ Student.
 \newblock \emph{Biometrika}, 6\penalty0 (1):\penalty0 1--25, 1908.
 \newblock ISSN 00063444.
 
-\bibitem[Szekely and Rizzo(2004)]{Szekely2004Energy}
-Gabor Szekely and Maria Rizzo.
+\bibitem[Sz\'ekely and Rizzo(2004)]{Szekely2004Energy}
+G\'abor Sz\'ekely and Maria Rizzo.
 \newblock Testing for equal distributions in high dimension.
 \newblock \emph{InterStat}, 5, 11 2004.
-
-\bibitem[Székely and Rizzo(2005)]{Szekely2005Energy}
-Gábor~J. Székely and Maria~L. Rizzo.
-\newblock A new test for multivariate normality.
-\newblock \emph{Journal of Multivariate Analysis}, 93\penalty0 (1):\penalty0
-  58--80, 2005.
-\newblock ISSN 0047-259X.
 
 \bibitem[Tang and Yang(2023)]{tang2023Besov}
 Rong Tang and Yun Yang.
