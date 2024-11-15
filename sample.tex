@@ -3231,8 +3231,8 @@ More information about this disclosure can be found on the JMLR website.}
 	
 	\subsubsection{Upper bound through Laplace or discrete Laplace mechanism}\label{proof:multinomial_upper_bound_first_moment}
 	Since the analysis for Laplace and discrete Laplace mechanism is similar, we present the proof using the former (see Remark~\ref{remark: discrete laplace noise} for details).
-	
-	\paragraph{Step 1: Upper bounds for the moments.}
+	\begin{itemize}
+	\item \textbf{Step 1: Upper bounds for the moments.}
 	We start by bounding the variance of conditional expectation terms.
 	Recall the notation
 	$
@@ -3248,7 +3248,7 @@ More information about this disclosure can be found on the JMLR website.}
 	\,|\,
 	\tilde{\vectorize{\rvTwo}}_1
 	\}]$.
-	To upper bound this quantity, we first calculate the conditional expectation of the kernel function, namely
+	To upper bound $\momentTwosampleVarCondexpY$, we first calculate the conditional expectation of the kernel function, namely
 	$A:=\mE\{ \kernelTwoSampleSym(
 	\tilde{\vectorize{\rvTwo}}_1,
 	\vecRandomPrivTwoSampleYNumber{2}
@@ -3259,7 +3259,7 @@ More information about this disclosure can be found on the JMLR website.}
 	\,|\,
 	\tilde{\vectorize{\rvTwo}}_1
 	\}$.
-	Then we find an upper bound of the variance of $A$.
+	Then we  bound the variance of $A$.
 	\\
 	
 	For the conditional expectation, recall
@@ -3607,7 +3607,7 @@ More information about this disclosure can be found on the JMLR website.}
 		\numberthis \label{eq:MYZTwoOne},	
 	\end{align*}
 	\noindent
-	where step~$(a)$ uses the independence between different samples, and
+	where step~$(a)$ uses the independence between observations, and
 	step~$(b)$ uses $
 	\mE
 	\bigl[
@@ -3621,13 +3621,7 @@ More information about this disclosure can be found on the JMLR website.}
 	\bigr)
 	\mathds{1}(\vectorIndex = \vectorIndex')$~(and similar equalitiy for $\tilde{\vectorize{\rvTwo}}_2$).
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	By symmetry, $\mE
-	\bigl[
-	(
-	\tilde{\vectorize{\rvThree}}_1^\top 
-	\tilde{\vectorize{\rvThree}}_2
-	)^2
-	\bigr]$ is also calculated as
+	By symmetry, we also have:
 	\begin{align*}
 		\mE
 		\bigl[
@@ -3779,7 +3773,7 @@ More information about this disclosure can be found on the JMLR website.}
 		Given this inequality, the entire proof of this section remains valid for \textnormal{\texttt{DiscLapU}} as well.
 	\end{remark}
 	%
-	\paragraph{Step 2: apply the two moments method.}\label{proof:twosample_upper_disc_conclusion}
+	\item \textbf{Step 2: apply the two moments method.}\label{proof:twosample_upper_disc_conclusion}
 	Using the bounds \eqref{upper_lapu_moment1} and \eqref{upper_lapu_moment2},  we show that condition \eqref{eq:two_moments_original_cond_two_sample} in the two moments method holds if the separation condition~\eqref{eq:two_moments_two_sample_cond_merge} in Lemma~\ref{appendix:lemma:discrete_upper_bound} is met.
 	Since $\mE [U_{\sampleSize_1, \sampleSize_2}] = \alphabetSize \| \probVec_\rvTwo - \probVec_\rvThree \|_2^2$, assuming $\sampleSize_1 \leq \sampleSize_2$, condition~\eqref{eq:two_moments_original_cond_two_sample} of Lemma~\ref{theorem:twosampleTwoMomentsMethod} is satisfied when
 	\begin{align*}
@@ -3804,7 +3798,7 @@ More information about this disclosure can be found on the JMLR website.}
 			}{ \gamma \beta \sampleSize_1^2}}	
 		\numberthis\label{twoSampleUpperboundConclusionTwo} \quad \text{from}~\eqref{upper_lapu_moment2},
 	\end{align*}
-	for all pairs  $P = (P_{Y}, P_{Z}) \in \mathcal{P}_{1,\mathrm{multi}}(\rho_{\sampleSize_1,\sampleSize_2})$.
+	for any  $P = (P_{Y}, P_{Z}) \in \mathcal{P}_{1,\mathrm{multi}}(\rho_{\sampleSize_1,\sampleSize_2})$.
 	%
 	Since $\LapUParam = 2 \sqrt{2 \alphabetSize}  / \privacyParameter$,
 	condition~\eqref{twoSampleUpperboundConclusionOne} is satisfied when
@@ -3945,8 +3939,8 @@ More information about this disclosure can be found on the JMLR website.}
 	\geq
 	\alphabetSize^{1/4} / \privacyParameter.
 	$
-	This completes the proof of the upper bound through the Laplace and discrete Laplace mechanisms.
-	
+	This completes the proof of the upper bound through the (discrete) Laplace  mechanism.
+	\end{itemize}
 	\subsubsection{Upper bound through \texttt{RAPPOR} mechanism}\label{proof:rappor_optimal}
 	While we follow the same two main steps as in Appendix~\ref{proof:multinomial_upper_bound_first_moment}, proving a tight upper bound under the \texttt{RAPPOR} mechanism requires a more delicate analysis due to the dependence and bias inherent in private views. %\ilmun{private views? remove --} the mechanism. 
 	To elaborate, note that the entries of an $\privacyParameter$-LDP view under the \texttt{RAPPOR} mechanism are dependent Bernoulli random variables. Specifically, 
@@ -4020,10 +4014,8 @@ More information about this disclosure can be found on the JMLR website.}
 	which is proved in Lemma~\ref{lemma:rappor_var}.
 	Keeping these facts in mind, we follow the two steps of Appendix~\ref{proof:multinomial_upper_bound_first_moment}.
 	
-	
-	
-	
-	\paragraph{Step 1: Upper bounds for the moments.}
+	\begin{itemize}
+	\item \textbf{Step 1: Upper bounds for the moments.}
 	We start by bounding the variance of conditional expectation terms. We begin with the intermediate form of $\momentTwosampleVarCondexpY$~\eqref{appendix:equation:multinomial:upper:forrappor} found in Appendix~\ref{proof:multinomial_upper_bound_first_moment}:
 	%\ilmun{Below and throughout, $\sum_{1 \leq \vectorIndex \neq \vectorIndex' \leq \alphabetSize}, \sum_{1 \leq \vectorIndex \neq \vectorIndex' \leq \alphabetSize} \to \sum_{1 \leq \vectorIndex \neq \vectorIndex' \leq \alphabetSize}$}
 	\begin{align*}
@@ -4441,8 +4433,8 @@ More information about this disclosure can be found on the JMLR website.}
 		\label{term:multinomial:upper:rappor_elltwo:EY1Y2:bound}
 		%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\end{align*}
-	where the last inequality uses inequalities \eqref{inequality:var_squared} and \eqref{inequality:cov_squared} in Lemma~\ref{rappor:inequalities}. 
-	By symmetry, we also have 
+	where the last inequality uses  \eqref{inequality:var_squared} and \eqref{inequality:cov_squared} in Lemma~\ref{rappor:inequalities}. 
+	By symmetry, we also have:
 	\begin{equation}\label{term:multinomial:upper:rappor_elltwo:EZ1Z2:bound}
 		\mE[
 		(
@@ -4769,7 +4761,7 @@ More information about this disclosure can be found on the JMLR website.}
 		\|\probVec_{\rvTwo} - \probVec_{\rvThree}\|_2^2,
 	\end{align*}
 	where step $(a)$ uses $2ab \leq a^2 + b^2$, and step $(b)$ uses Lemma~\ref{rappor:inequalities}.
-	For the term~\eqref{term:multinomial:upper:rappor_elltwo:EY1Z2:cov}, first
+	For the term~\eqref{term:multinomial:upper:rappor_elltwo:EY1Z2:cov}, 
 	note that:
 	\begin{align*}
 		\mE&
@@ -5022,7 +5014,7 @@ More information about this disclosure can be found on the JMLR website.}
 	\end{equation}
 	
 	
-	\paragraph{Step 2: apply the two moments method.}
+	\item \textbf{Step 2: apply the two moments method.}
 	Using the bounds in
 	\eqref{inequality:rappor_elltwo_var_condexp_y}, 
 	\eqref{inequality:rappor_elltwo_var_condexp_z} 
@@ -5399,7 +5391,7 @@ More information about this disclosure can be found on the JMLR website.}
 		\biggr\}.
 	\end{align*}
 	This completes the proof of the upper bound through \texttt{RAPPOR} mechanism.
-	
+\end{itemize}
 	
 	\subsection{Lower bound}
 	The lower bound result follows by combining the lower bound results of Theorem 3.2 in \citep{Lam-Weil2021MinimaxConstraint} for the one-sample problem under LDP with results from \citep{chan2014optimal,kim_minimax_2022} for the two-sample problem without privacy constraints. Hence we omit the details. 

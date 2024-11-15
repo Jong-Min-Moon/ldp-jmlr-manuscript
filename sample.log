@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  14 NOV 2024 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  14 NOV 2024 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1210,12 +1210,21 @@ Overfull \hbox (12.8158pt too wide) in paragraph at lines 3074--3080
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 3236--3264
+Overfull \hbox (8.39293pt too wide) in paragraph at lines 3235--3264
+\T1/cmr/m/n/10.95 tional ex-pec-ta-tion terms. Re-call the no-ta-tion $\OML/cmm
+/m/it/10.95 M[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 P; Q\OT1/cmr/m/n/10.95 )
+ = [][][\U/msb/m/n/10.95 E\OMS/cmsy/m/n/10.95 f[]\OT1/cmr/m/n/10.95 ([]\OML/cmm
+/m/it/10.95 ; []\OT1/cmr/m/n/10.95 ; []\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.
+95 ) \OMS/cmsy/m/n/10.95 j []g\OT1/cmr/m/n/10.95 ]$\T1/cmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3235--3264
 
  []
 
 [31]
-Overfull \hbox (13.02133pt too wide) in paragraph at lines 3498--3502
+Overfull \hbox (40.3964pt too wide) in paragraph at lines 3498--3502
 \T1/cmr/m/n/10.95 Combining the up-per bound re-sults of [] and [], and keep-in
 g in mind that $\OML/cmm/m/it/10.95 b \OT1/cmr/m/n/10.95 = []\OMS/cmsy/m/n/10.9
 5 fk\OT1/cmr/bx/n/10.95 p[]\OMS/cmsy/m/n/10.95 k[]\OML/cmm/m/it/10.95 ; \OMS/cm
@@ -1223,92 +1232,112 @@ sy/m/n/10.95 k\OT1/cmr/bx/n/10.95 p[]\OMS/cmsy/m/n/10.95 k[]g$\T1/cmr/m/n/10.95
  ,
  []
 
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 3718--3735
+
+Underfull \vbox (badness 1490) has occurred while \output is active []
+
+ [32]
+Underfull \hbox (badness 10000) in paragraph at lines 3712--3729
 
  []
 
-
-Overfull \hbox (0.54349pt too wide) in paragraph at lines 3754--3780
-[][]\T1/cmr/m/it/10.95 In our proof with con-tin-u-ous Laplace
+[33] [34]
+Overfull \hbox (12.26329pt too wide) detected at line 4171
+[]
  []
 
-[33] [34] [35]
-Overfull \hbox (14.45654pt too wide) detected at line 4715
+[35]
+Overfull \hbox (24.23808pt too wide) detected at line 4435
+[]
+ []
+
+
+Overfull \hbox (24.64873pt too wide) detected at line 4595
 []
  []
 
 [36]
-Overfull \hbox (10.9085pt too wide) detected at line 4974
+Overfull \hbox (41.8316pt too wide) detected at line 4707
 []
  []
 
-[37]
-Overfull \hbox (23.39275pt too wide) detected at line 5111
+
+Overfull \hbox (38.28355pt too wide) detected at line 4966
+[]
+ []
+
+
+Underfull \vbox (badness 1184) has occurred while \output is active []
+
+ [37]
+Overfull \hbox (50.7678pt too wide) detected at line 5103
 []
  []
 
 [38]
-Overfull \hbox (41.074pt too wide) detected at line 5400
+Overfull \hbox (68.44907pt too wide) detected at line 5392
 []
  []
 
-[39] [40]
-Overfull \hbox (4.28786pt too wide) in paragraph at lines 5773--5778
+[39] [40] [41]
+Overfull \hbox (4.28786pt too wide) in paragraph at lines 5765--5770
 [][]\T1/cmr/m/it/10.95 Consider the Haar wavelet ba-sis on $\OT1/cmr/m/n/10.95 
 [0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1][]$
  []
 
-[41] [42]
-Overfull \hbox (0.61688pt too wide) in paragraph at lines 5875--5877
+[42]
+Overfull \hbox (0.61688pt too wide) in paragraph at lines 5867--5869
 [][]\T1/cmr/m/it/10.95 With prob-a-bil-ity at least $\OT1/cmr/m/n/10.95 1 \OMS/
 cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^M$\T1/cmr/m/it/10.95 , a func-tion dra
 wn from $\OML/cmm/m/it/10.95 ^^W[]$ \T1/cmr/m/it/10.95 lies in $\OMS/cmsy/m/n/1
 0.95 B[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 R\OT1/cmr/m/n/10.95 )$
  []
 
-[43] [44] [45] [46]
-Overfull \hbox (58.55328pt too wide) in paragraph at lines 6468--6492
+[43] [44] [45]
+Underfull \vbox (badness 2173) has occurred while \output is active []
+
+ [46]
+[47]
+Overfull \hbox (58.55328pt too wide) in paragraph at lines 6460--6484
 \T1/cmr/m/n/10.95 Under the event $[][] \OML/cmm/m/it/10.95 A[]$ \T1/cmr/m/n/10
 .95 as de-fined in [], the deriva-tive above is bounded by $\OML/cmm/m/it/10.95
  ^^T[]\OMS/cmsy/m/n/10.95 jjj\OML/cmm/m/it/10.95 '[]\OMS/cmsy/m/n/10.95 jjj[]\O
 ML/cmm/m/it/10.95 ![]$\T1/cmr/m/n/10.95 .
  []
 
-[47] [48] [49]
-Overfull \hbox (22.75046pt too wide) in paragraph at lines 7126--7129
+[48] [49] [50]
+Overfull \hbox (22.75046pt too wide) in paragraph at lines 7118--7121
 [][]
  []
 
-[50] [51]
-Overfull \hbox (1.41432pt too wide) in paragraph at lines 7304--7308
+[51] [52]
+Overfull \hbox (1.41432pt too wide) in paragraph at lines 7296--7300
 [][]\T1/cmr/m/it/10.95 Assume the same multi-no-mial
  []
 
-<power24.pdf, id=1458, 572.0592pt x 219.34346pt>
+<power24.pdf, id=1462, 572.0592pt x 219.34346pt>
 File: power24.pdf Graphic file (type pdf)
 <use power24.pdf>
-Package pdftex.def Info: power24.pdf  used on input line 7330.
+Package pdftex.def Info: power24.pdf  used on input line 7322.
 (pdftex.def)             Requested size: 446.26582pt x 171.11731pt.
-[52]
-<density_scale.pdf, id=1473, 572.05522pt x 596.28674pt>
+[53]
+<density_scale.pdf, id=1477, 572.05522pt x 596.28674pt>
 File: density_scale.pdf Graphic file (type pdf)
 <use density_scale.pdf>
-Package pdftex.def Info: density_scale.pdf  used on input line 7374.
+Package pdftex.def Info: density_scale.pdf  used on input line 7366.
 (pdftex.def)             Requested size: 446.26582pt x 465.18367pt.
 
-Overfull \hbox (14.83229pt too wide) in paragraph at lines 7384--7385
+Overfull \hbox (14.83229pt too wide) in paragraph at lines 7376--7377
 \T1/cmr/m/n/10.95 This sec-tion presents the proof of chi-square asymp-totic nu
 ll dis-tri-bu-tions of $[]$ and $[]$
  []
 
-[53 <./power24.pdf>] [54 <./density_scale.pdf>]
-Overfull \hbox (11.3303pt too wide) detected at line 7561
+[54 <./power24.pdf>] [55 <./density_scale.pdf>]
+Overfull \hbox (11.3303pt too wide) detected at line 7553
 []
  []
 
-[55] [56] [57] [58] [59]
-Underfull \hbox (badness 7099) in paragraph at lines 7983--8002
+[56] [57] [58] [59] [60]
+Underfull \hbox (badness 7099) in paragraph at lines 7975--7994
 \T1/cmr/m/n/10.95 Utilizing the equal-i-ties $[]\OT1/cmr/bx/n/10.95 p[]p[][][] 
 \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 k\OT1/cmr/bx/n/10.95 p[]\OMS/cmsy/m/n/
 10.95 k[]\OT1/cmr/bx/n/10.95 p[]p[]$\T1/cmr/m/n/10.95 , $[][]\OT1/cmr/bx/n/10.9
@@ -1316,17 +1345,17 @@ Underfull \hbox (badness 7099) in paragraph at lines 7983--8002
 S/cmsy/m/n/10.95 k[]$\T1/cmr/m/n/10.95 , and
  []
 
-[60] [61]
-Overfull \hbox (17.0089pt too wide) detected at line 8712
+[61] [62]
+Overfull \hbox (17.0089pt too wide) detected at line 8704
 []
  []
 
-[62]
-Underfull \hbox (badness 10000) in paragraph at lines 8712--8716
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 8704--8708
 
  []
 
-(./sample.bbl [63] [64] [65] [66] [67] [68]) [69]
+(./sample.bbl [64] [65] [66] [67] [68] [69]) [70]
 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./sample.aux)
@@ -1336,13 +1365,13 @@ L3 programming layer <2023-08-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 28693 strings out of 475188
- 519548 string characters out of 5767814
- 1957248 words of memory out of 5000000
+ 28694 strings out of 475188
+ 519555 string characters out of 5767814
+ 1956248 words of memory out of 5000000
  49042 multiletter control sequences out of 15000+600000
  586971 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,20n,93p,1846b,729s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,20n,93p,1846b,727s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/202
 3/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-d
@@ -1383,10 +1412,10 @@ er/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti109
 5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/
 texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/20
 23/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on sample.pdf (69 pages, 1157211 bytes).
+Output written on sample.pdf (70 pages, 1158028 bytes).
 PDF statistics:
- 2115 PDF objects out of 2487 (max. 8388607)
- 1847 compressed objects within 19 object streams
- 386 named destinations out of 1000 (max. 500000)
+ 2119 PDF objects out of 2487 (max. 8388607)
+ 1850 compressed objects within 19 object streams
+ 387 named destinations out of 1000 (max. 500000)
  366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
