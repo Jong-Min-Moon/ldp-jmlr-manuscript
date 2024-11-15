@@ -5400,8 +5400,9 @@ More information about this disclosure can be found on the JMLR website.}
 	Here we prove the upper bound and lower bound results for density two-sample testing.
 	We start with the upper bound~(Appendix~\ref{proof_theorem:twosample_conti_rate}) and move onto the lower bound~(Appendix~\ref{proof:twosample_conti_lower_bound}).
 	\subsection{Upper bound}\label{proof_theorem:twosample_conti_rate}
-	The proof of the upper bound  proceeds in two steps, where step 1 leverage the result from multinomial testing (Lemma~\ref{appendix:lemma:discrete_upper_bound}), and step 2 utilizes the discretization error analysis (Appendix~\ref{appendix:disc_error}). 
-	\paragraph{Step 1: separation condition for the probability vectors.}
+	The proof of the upper bound  proceeds in two steps, where step 1 leverage the result from multinomial testing (Lemma~\ref{appendix:lemma:discrete_upper_bound}), and step 2 utilizes the discretization error analysis (Appendix~\ref{appendix:disc_error}).
+	\begin{itemize}
+	\item \textbf{Step 1: separation condition for the probability vectors.}
 	We derive a separation condition for the probability vectors $\probVec_{\vectorize{\rvTwo}}$ and $\probVec_{\vectorize{\rvThree}}$ of $\binNum^\dimDensity$ 
 	categories, obtained by binning the densities $f_{\vectorize{\rvTwo}}$ and $f_{\vectorize{\rvThree}}$, that ensures our multinomial test distinguishes between them using the samples. By substituting $(\probVec_{{\rvTwo}}, \probVec_{{\rvThree}})$ with $(\probVec_{\vectorize{\rvTwo}}, \probVec_{\vectorize{\rvThree}})$ 
 	and $\alphabetSize$ with $\binNum^\dimDensity$ in the separation condition~\eqref{eq:two_moments_two_sample_cond_merge} of Lemma~\ref{appendix:lemma:discrete_upper_bound}, we obtain the  following separation condition:
@@ -5480,7 +5481,7 @@ More information about this disclosure can be found on the JMLR website.}
 		{{\sampleSize_1}^{1/2}}
 		\biggr).
 	\end{equation}
-	\paragraph{Step 2: separation condition for the densities.}
+	\item \textbf{Step 2: separation condition for the densities.}
 	Now we find a density separation condition  that ensures the probability vector separation condition \eqref{twosample_upper_conti_2}. 
 	From the discretization error analysis~\eqref{equation:disc_error_holder_utilize} and~\eqref{equation:disc_error_besov_utilize} in Appendix~\ref{appendix:disc_error}, both for the H\"{o}lder and Besov case, we have the following inequality:
 	\begin{equation*}
@@ -5598,6 +5599,7 @@ More information about this disclosure can be found on the JMLR website.}
 		\biggr\}.
 	\end{equation*}
 	This concludes the proof of the upper bound result of Theorem~\ref{theorem:twosample_conti_rate}.
+	\end{itemize}
 	%
 	\subsection{Lower bound}\label{proof:twosample_conti_lower_bound}
 	By the argument in \citet{Arias-Castro2018RememberDimension}, the lower bound for the minimax testing rate in the one-sample problem, denoted as $\separation^\ast_{n_1, \privacyParameter}$, also provides a lower bound for the minimax rate in two-sample case, denoted as $\separation^\ast_{n_1, n_2, \privacyParameter}$. 
@@ -5887,7 +5889,7 @@ More information about this disclosure can be found on the JMLR website.}
 		\end{equation} 
 		then no valid $\privacyParameter$-LDP test of level $\gamma$ can distinguish between the uniform density $f_0$ and the alternatives in~\eqref{one_sample_hypothesis} (with $\distClassGeneric = \pHolderGof$) with type II error less than $\beta$. The same conclusion holds when $\pHolderGof$ and the condition in \ref{lemma:holder_ball} is replaced by $\pBesovGof$ and the condition in \ref{lemma:besovball}, respectively. \end{lemma}
 	%
-	\paragraph{Conclusion.}
+	We now gather the results to form a conclusion.
 	Recall from Lemma~\ref{lemma:mixture_separation} that $\vertiii{ f^{{\boldsymbol{\eta}}}_{\omega, \binNum}- f_0}_{\mathbb{L}_2}
 	\geq
 	\binNum^{\dimDensity} \omega \sqrt{

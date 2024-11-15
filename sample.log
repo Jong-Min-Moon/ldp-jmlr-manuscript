@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  14 NOV 2024 19:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.29)  14 NOV 2024 19:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1279,13 +1279,13 @@ Overfull \hbox (68.44907pt too wide) detected at line 5392
  []
 
 [39] [40] [41]
-Overfull \hbox (4.28786pt too wide) in paragraph at lines 5765--5770
+Overfull \hbox (4.28786pt too wide) in paragraph at lines 5767--5772
 [][]\T1/cmr/m/it/10.95 Consider the Haar wavelet ba-sis on $\OT1/cmr/m/n/10.95 
 [0\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1][]$
  []
 
 [42]
-Overfull \hbox (0.61688pt too wide) in paragraph at lines 5867--5869
+Overfull \hbox (0.61688pt too wide) in paragraph at lines 5869--5871
 [][]\T1/cmr/m/it/10.95 With prob-a-bil-ity at least $\OT1/cmr/m/n/10.95 1 \OMS/
 cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^M$\T1/cmr/m/it/10.95 , a func-tion dra
 wn from $\OML/cmm/m/it/10.95 ^^W[]$ \T1/cmr/m/it/10.95 lies in $\OMS/cmsy/m/n/1
@@ -1297,7 +1297,7 @@ Underfull \vbox (badness 2173) has occurred while \output is active []
 
  [46]
 [47]
-Overfull \hbox (58.55328pt too wide) in paragraph at lines 6460--6484
+Overfull \hbox (58.55328pt too wide) in paragraph at lines 6462--6486
 \T1/cmr/m/n/10.95 Under the event $[][] \OML/cmm/m/it/10.95 A[]$ \T1/cmr/m/n/10
 .95 as de-fined in [], the deriva-tive above is bounded by $\OML/cmm/m/it/10.95
  ^^T[]\OMS/cmsy/m/n/10.95 jjj\OML/cmm/m/it/10.95 '[]\OMS/cmsy/m/n/10.95 jjj[]\O
@@ -1305,39 +1305,39 @@ ML/cmm/m/it/10.95 ![]$\T1/cmr/m/n/10.95 .
  []
 
 [48] [49] [50]
-Overfull \hbox (22.75046pt too wide) in paragraph at lines 7118--7121
+Overfull \hbox (22.75046pt too wide) in paragraph at lines 7120--7123
 [][]
  []
 
 [51] [52]
-Overfull \hbox (1.41432pt too wide) in paragraph at lines 7296--7300
+Overfull \hbox (1.41432pt too wide) in paragraph at lines 7298--7302
 [][]\T1/cmr/m/it/10.95 Assume the same multi-no-mial
  []
 
 <power24.pdf, id=1462, 572.0592pt x 219.34346pt>
 File: power24.pdf Graphic file (type pdf)
 <use power24.pdf>
-Package pdftex.def Info: power24.pdf  used on input line 7322.
+Package pdftex.def Info: power24.pdf  used on input line 7324.
 (pdftex.def)             Requested size: 446.26582pt x 171.11731pt.
 [53]
 <density_scale.pdf, id=1477, 572.05522pt x 596.28674pt>
 File: density_scale.pdf Graphic file (type pdf)
 <use density_scale.pdf>
-Package pdftex.def Info: density_scale.pdf  used on input line 7366.
+Package pdftex.def Info: density_scale.pdf  used on input line 7368.
 (pdftex.def)             Requested size: 446.26582pt x 465.18367pt.
 
-Overfull \hbox (14.83229pt too wide) in paragraph at lines 7376--7377
+Overfull \hbox (14.83229pt too wide) in paragraph at lines 7378--7379
 \T1/cmr/m/n/10.95 This sec-tion presents the proof of chi-square asymp-totic nu
 ll dis-tri-bu-tions of $[]$ and $[]$
  []
 
 [54 <./power24.pdf>] [55 <./density_scale.pdf>]
-Overfull \hbox (11.3303pt too wide) detected at line 7553
+Overfull \hbox (11.3303pt too wide) detected at line 7555
 []
  []
 
 [56] [57] [58] [59] [60]
-Underfull \hbox (badness 7099) in paragraph at lines 7975--7994
+Underfull \hbox (badness 7099) in paragraph at lines 7977--7996
 \T1/cmr/m/n/10.95 Utilizing the equal-i-ties $[]\OT1/cmr/bx/n/10.95 p[]p[][][] 
 \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 k\OT1/cmr/bx/n/10.95 p[]\OMS/cmsy/m/n/
 10.95 k[]\OT1/cmr/bx/n/10.95 p[]p[]$\T1/cmr/m/n/10.95 , $[][]\OT1/cmr/bx/n/10.9
@@ -1346,12 +1346,12 @@ S/cmsy/m/n/10.95 k[]$\T1/cmr/m/n/10.95 , and
  []
 
 [61] [62]
-Overfull \hbox (17.0089pt too wide) detected at line 8704
+Overfull \hbox (17.0089pt too wide) detected at line 8706
 []
  []
 
 [63]
-Underfull \hbox (badness 10000) in paragraph at lines 8704--8708
+Underfull \hbox (badness 10000) in paragraph at lines 8706--8710
 
  []
 
@@ -1412,7 +1412,7 @@ er/sfti1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti109
 5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/
 texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/20
 23/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on sample.pdf (70 pages, 1158028 bytes).
+Output written on sample.pdf (70 pages, 1158228 bytes).
 PDF statistics:
  2119 PDF objects out of 2487 (max. 8388607)
  1850 compressed objects within 19 object streams
