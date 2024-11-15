@@ -20,11 +20,15 @@
 % Example of using the package with custom options:
 %
 % \usepackage[abbrvbib, preprint]{jmlr2e}
-
-\usepackage{jmlr2e}
 \usepackage{amsmath}
 \usepackage{verbatim}
+
+\usepackage[font=small,labelfont=bf]{caption} % for jmlr, this should precede jmlr2e
+\captionsetup[table]{skip=0.5pt}% % for jmlr, this should precede jmlr2e
+\usepackage{jmlr2e}
 \usepackage[open,openlevel=1]{bookmark}
+
+
 \usepackage{dirtytalk}
 \usepackage{mathtools} %\DeclarePairedDelimiter
 \usepackage{dsfont} %indicator
@@ -52,12 +56,12 @@
 \usepackage{lipsum}
 \usepackage{blindtext}
 %
+
 \usepackage[titletoc,title]{appendix}
 \usepackage[T1]{fontenc}
 
 \usepackage{url}
-\usepackage[font=small,labelfont=bf]{caption}
-\captionsetup[table]{skip=0.5pt}
+
 
 \usepackage{hyperref}[] % hyperlink
 \hypersetup{
@@ -91,7 +95,7 @@
 \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
 \newcommand{\lbr}[1][6]{\displaybreak[1]\\[#1pt]}% a command to simplify optional line break in the midst of an equation, with a default value of 6pt
 
-\newcommand{\dataset}{{\cal D}}
+\newcommand{\data set}{{\cal D}}
 \newcommand{\fracpartial}[2]{\frac{\partial #1}{\partial  #2}}
 %special vectors and matrices
 \newcommand{\vecOne}[1]{\mathbf{1}_{#1}}
@@ -634,7 +638,7 @@
 	\right)
 }
 
-\newcommand{\priVecIndepDataset}{
+\newcommand{\priVecIndepdata set}{
 	\left\{
 	\priVecIndep
 	\right\}_{i=1}^n
@@ -721,10 +725,10 @@
 % probability spaces
 \newcommand{\sigmaAlgebraYPriv}{\mathcal{F}_{i}^\Phi}
 
-% datasets
-\newcommand{\datasetTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
-\newcommand{\datasetTwosampleZ}{\mathcal{Z}_{\sampleSize_2}}
-\newcommand{\datasetIndep}{\mathcal{X}_{n}}
+% data sets
+\newcommand{\data setTwosampleY}{\mathcal{Y}_{\sampleSize_1}}
+\newcommand{\data setTwosampleZ}{\mathcal{Z}_{\sampleSize_2}}
+\newcommand{\data setIndep}{\mathcal{X}_{n}}
 %algorithm names
 
 
@@ -963,10 +967,10 @@ We explore the trade-off between privacy and statistical utility in private two-
 
 \section{Introduction}\label{section_intro}
 %new intro start
-Large-scale internet services such as Netflix and Amazon collect sensitive data from massive user bases, allowing companies to conduct cost-effective randomized experiments by assigning users to two different user interfaces or marketing campaigns. By testing whether the resulting two independent sets of samples originate from the same distribution{\textemdash}a procedure known as A/B testing or two-sample testing{\textemdash}companies can statistically assess the impact of new interfaces or campaigns on various user behaviors. However, the sensitivity of detailed personal data raises substantial privacy concerns in data analysis. Since privacy protection inherently conceals some of the information in the data and in turn compromises statistical utility, it is crucial to characterize and balance the trade-off between statistical utility and data privacy. Differential privacy (DP;~\citet{CynthiaDwork2006CalibratingAnalysis}) provides a rigorous framework for this trade-off, defining data privacy as a mathematical concept that supports such balancing.
+Large-scale internet services such as Netflix and Amazon collect sensitive data from massive user bases, allowing companies to conduct cost-effective randomized experiments by assigning users to two different user interfaces or marketing campaigns. By testing whether the resulting two independent sets of samples originate from the same distribution{---}a procedure known as A/B testing or two-sample testing{---}companies can statistically assess the impact of new interfaces or campaigns on various user behaviors. However, the sensitivity of detailed personal data raises substantial privacy concerns in data analysis. Since privacy protection inherently conceals some of the information in the data and in turn compromises statistical utility, it is crucial to characterize and balance the trade-off between statistical utility and data privacy. Differential privacy (DP;~\citet{CynthiaDwork2006CalibratingAnalysis}) provides a rigorous framework for this trade-off, defining data privacy as a mathematical concept that supports such balancing.
 
 We briefly review two notions of DP: central and local DP.
-The central DP constraint assumes that a trusted data curator (or distributor) has access to the entire original dataset and calculates a noisy statistical result. This centralized approach requires that the probability of any event remains essentially the same when a single data entry is arbitrarily perturbed.
+The central DP constraint assumes that a trusted data curator (or distributor) has access to the entire original data set and calculates a noisy statistical result. This centralized approach requires that the probability of any event remains essentially the same when a single data entry is arbitrarily perturbed.
 Under this constraint, one cannot reliably extract any individual-level information from the noisy statistical result. In contrast, data owners do not place trust in the curator in the local DP constraint (LDP; \citet{Kasiviswanathan2008WhatPrivately}). Instead, each data owner independently reports a noisy version of their data. This more stringent local constraint inevitably impairs statistical utility more than the central constraint. However, it provides a higher level of privacy and separates the data curator from the responsibility for disclosure risk.
 
 These benefits have driven widespread adoption of the LDP framework in the internet-scale deployment of data analysis under privacy, such as in
@@ -976,7 +980,7 @@ Apple~\citep{Apple2017Privacy},
 and Uber~\citep{Near2017Uber}. With the massive user bases, these companies require stringent privacy protections, while also having the capacity to obtain large samples which allows statistically meaningful analyses within strong privacy constraints. Various implementations of LDP in industrial applications has naturally spurred a substantial body of work~\citep{Acharya2021DifferentiallyCam, Duchi2018MinimaxEstimation, Lam-Weil2021MinimaxConstraint, Lalanne2023on, Tony2021DP}, examining the intrinsic trade-off between privacy and statistical utility in various settings. This paper contributes to this body of work by exploring this trade-off in the context of the two-sample testing problem. 
 
 The two-sample testing problem, which originates from the classical two-sample $t$-test~\citep{Student1908Twosample}, has gained renewed interest in recent years due to the emergence of high-dimensional and complex data.  
-Notably, several novel methodological approaches have been developed including kernel-based tests~\citep{Gretton2009FastKernel, Gretton2012ATest}, distance-based tests~\citep{Szekely2004Energy, Szekely2005Energy} and regression/classification-based tests~\citep{kim2019,kim2021}, which have demonstrated promising capabilities in dealing with modern datasets.
+Notably, several novel methodological approaches have been developed including kernel-based tests~\citep{Gretton2009FastKernel, Gretton2012ATest}, distance-based tests~\citep{Szekely2004Energy, Szekely2005Energy} and regression/classification-based tests~\citep{kim2019,kim2021}, which have demonstrated promising capabilities in dealing with modern data sets.
 On the theoretical front, researchers have explored the fundamental limit of this problem through the lens of minimax analysis both in the statistics~\citep[e.g.,][]{Arias-Castro2018RememberDimension, kim_minimax_2022, Schrab2021MMDTest} and computer science~\citep[e.g.,][]{Batu2000NonprivateTwosample, Chan2014Nonprivate, Diakonikolas2016Nonprivate, Goldreich2000Nonprivate} literature.
 In addition to the methodological and theoretical advancements, the topic has found contemporary applications such as in education research \citep{Rabin2019ModelingTests}, network traffic analysis \citep{Kohout2018NetworkTest}, and audio segmentation \citep{Harchaoui2009ASegmentation}.
 Despite its long history and fundamental roles in practice, most of the existing work on two-sample testing has focused on non-private settings with a few exceptions. Exceptions include private versions of
@@ -988,7 +992,7 @@ In the following subsection, we begin with a review of related work and then dis
 
 \subsection{Related Prior Work}\label{section:related_works}
 Private hypothesis testing has been extensively studied in the statistics and computer science literature.
-Among various studies on this topic, we briefly review those closely related to our work. Initially motivated by the privacy attack on genome-wide association study~(GWAS)~\citep{homer2008resolving}, the early work on private testing mainly concentrates on private versions of chi-square tests and explores their asymptotic properties~\citep{Gaboardi2016DPChisq, Gaboardi2018LDPChisq, Johnson2013PrivacyStudies, Kifer2017DPChisq, Uhler2013PrivacyStudies, Vu2009DifferentialEvaluations, Wang2015DPChisq, Yu2014Chisq}. In contrast, a recent line of work in computer science is concerned with non-asymptotic properties of private tests designed for multinomial datasets, and studies optimal sample complexities of testing problems from a minimax perspective. This line of work has been initiated by \citet{Cai2017DPGofPrivit} for central DP and \citet{Sheffet2018LDP} for LDP, and continued by \citet{Acharya2018dPGofTwosample, Aliakbarpour2019PrivatePermutations, Aliakbarpour2018DPgof} for central DP and \citet{Acharya2020Lowerbound, Acharya2021Lowerbound} for LDP, respectively. The optimal sample complexity is usually achieved through a systematic analysis of both its upper and lower bounds. For the upper bound analysis, the prior works extend non-private multinomial tests such as in \citep{Acharya2015Nonprivate, Chan2014Nonprivate, Diakonikolas2018Nonprivate, Diakonikolas2016Nonprivate, Goldreich2000Nonprivate, Valiant2017Nonprivate} to corresponding private counterparts by incorporating randomization mechanisms. On the other hand, the lower bound analysis relies on information-theoretic techniques, such as Le Cam's method, while treating the DP requirement as information constraints~(for detailed discussions, see e.g.,~\citet{Acharya2020Lowerbound, Duchi2018MinimaxEstimation}).
+Among various studies on this topic, we briefly review those closely related to our work. Initially motivated by the privacy attack on genome-wide association study~(GWAS)~\citep{homer2008resolving}, the early work on private testing mainly concentrates on private versions of chi-square tests and explores their asymptotic properties~\citep{Gaboardi2016DPChisq, Gaboardi2018LDPChisq, Johnson2013PrivacyStudies, Kifer2017DPChisq, Uhler2013PrivacyStudies, Vu2009DifferentialEvaluations, Wang2015DPChisq, Yu2014Chisq}. In contrast, a recent line of work in computer science is concerned with non-asymptotic properties of private tests designed for multinomial data sets, and studies optimal sample complexities of testing problems from a minimax perspective. This line of work has been initiated by \citet{Cai2017DPGofPrivit} for central DP and \citet{Sheffet2018LDP} for LDP, and continued by \citet{Acharya2018dPGofTwosample, Aliakbarpour2019PrivatePermutations, Aliakbarpour2018DPgof} for central DP and \citet{Acharya2020Lowerbound, Acharya2021Lowerbound} for LDP, respectively. The optimal sample complexity is usually achieved through a systematic analysis of both its upper and lower bounds. For the upper bound analysis, the prior works extend non-private multinomial tests such as in \citep{Acharya2015Nonprivate, Chan2014Nonprivate, Diakonikolas2018Nonprivate, Diakonikolas2016Nonprivate, Goldreich2000Nonprivate, Valiant2017Nonprivate} to corresponding private counterparts by incorporating randomization mechanisms. On the other hand, the lower bound analysis relies on information-theoretic techniques, such as Le Cam's method, while treating the DP requirement as information constraints~(for detailed discussions, see e.g.,~\citet{Acharya2020Lowerbound, Duchi2018MinimaxEstimation}).
 
 There are also a few recent papers from the statistics community that explore univariate goodness-of-fit testing under LDP. Specifically, \citet{Dubois2022} propose minimax optimal goodness-of-fit tests for H\"{o}lder densities under LDP in both non-interactive and interactive scenarios. \citet{Lam-Weil2021MinimaxConstraint} also consider goodness-of-fit testing under LDP, and develop minimax optimal tests for multinomials and for continuous densities over Besov balls. Our work builds on their framework and extends the focus from goodness-of-fit testing to two-sample testing for both (i) multinomials and (ii) multivariate H\"{o}lder and Besov densities. It is worth highlighting that previous works \citep{Lam-Weil2021MinimaxConstraint, Dubois2022} rely  solely on the Laplace mechanism \citep{Dwork2014Book} to establish their theoretical results. In contrast, we explore various LDP mechanisms that achieve similar optimality properties and empirically demonstrate that the Laplace mechanism can underperform in practical scenarios. Specifically, we delve into the Google's \texttt{RAPPOR}~\cite{Gaboardi2018LDPChisq, erlingsson_rappor_2014, acharya_test_2019}, generalized randomized response~\citep{Gaboardi2018LDPChisq}, and (discrete) Laplace mechanisms~\citep{ghosh2009}, and illustrate their theoretical and empirical performance.
 \subsection{Techniques and Results}\label{subsection:techniques}
@@ -1013,7 +1017,7 @@ For the lower bound analysis, we leverage a recently developed technique by~\cit
 \noindent \textit{Summary of our contributions.} We highlight our contributions and contrast them with prior work as follows. We also refer readers to Table~\ref{table:rates}, which summarizes the non-private and private minimax separation rates for two-sample testing, derived from both prior work and our findings.
 
 \begin{itemize}
-	\item \textbf{Optimal multinomial testing under LDP~(Theorem~\ref{theorem:twosample_multinomial_rates}):} We start by developing a private two-sample test for multinomials, and present minimax separation rates in terms of the $\ell_2$ distance under LDP. The prior work~\cite{Acharya2018dPGofTwosample, Aliakbarpour2019PrivatePermutations,Aliakbarpour2018DPgof} for private two-sample testing generally focuses on central DP and imposes conditions such as equal sample sizes and Poisson sampling that may not be practically relevant. In contrast, our approach does not rely on such unnecessary conditions, and obtain optimality under more practical settings. We also highlight that our upper bound result is established using three distinct LDP mechanisms{\textemdash}namely Laplace, discrete Laplace and \texttt{RAPPOR} mechanisms{\textemdash}which diversifies the toolkit in practice. As mentioned earlier, this is in contrast to the prior work~\cite{Lam-Weil2021MinimaxConstraint,Dubois2022}, which mainly focuses on the Laplace mechanism. Moreover, we show that the use of generalized randomized response mechanism~\citep{Gaboardi2018LDPChisq} can lead to suboptimal power in Appendix~\ref{genrr_suboptimal_theory}. 
+	\item \textbf{Optimal multinomial testing under LDP~(Theorem~\ref{theorem:twosample_multinomial_rates}):} We start by developing a private two-sample test for multinomials, and present minimax separation rates in terms of the $\ell_2$ distance under LDP. The prior work~\cite{Acharya2018dPGofTwosample, Aliakbarpour2019PrivatePermutations,Aliakbarpour2018DPgof} for private two-sample testing generally focuses on central DP and imposes conditions such as equal sample sizes and Poisson sampling that may not be practically relevant. In contrast, our approach does not rely on such unnecessary conditions, and obtain optimality under more practical settings. We also highlight that our upper bound result is established using three distinct LDP mechanisms{---}namely Laplace, discrete Laplace and \texttt{RAPPOR} mechanisms{---}which diversifies the toolkit in practice. As mentioned earlier, this is in contrast to the prior work~\cite{Lam-Weil2021MinimaxConstraint,Dubois2022}, which mainly focuses on the Laplace mechanism. Moreover, we show that the use of generalized randomized response mechanism~\citep{Gaboardi2018LDPChisq} can lead to suboptimal power in Appendix~\ref{genrr_suboptimal_theory}. 
 	\item \textbf{Optimal density testing under LDP~(Theorem~\ref{theorem:twosample_conti_rate}):} We next consider the two-sample problem for continuous data and derive optimal $\mathbb{L}_2$ separation rates under LDP, by leveraging the prior work of \cite{Lam-Weil2021MinimaxConstraint,kim_minimax_2022}. In particular, we examine both H\"{o}lder and Besov smoothness classes, and show that the proposed private test is optimal for both classes with the finite-sample validity. In contrast to the prior work~\citep{Ding2018TwosampleMean, Waudby-Smith2022LDPTwosample}, primarily focused on location alternatives, our private test is sensitive against a broad range of nonparametric alternatives. Moreover, we highlight that our method controls the type I error in any finite sample sizes, and exactly satisfies the LDP condition, distinguishing it from the prior work of \cite{Raj2020ATest}.
 	\item \textbf{Adaptive density testing under LDP (Theorem~\ref{theorem:twosample_adaptive_upper}):} Similar to other nonparametric methods for density testing, the optimality of the proposed density test relies on the knowledge of the underlying smoothness parameter, which is typically unknown. To tackle this issue, we introduce a Bonferroni-type approach that adapts to the unknown smoothness parameter at the expense of extra logarithmic factors in the separation rate. The proof of the adaptation result leverages the exponential inequality of the permuted U-statistic~\citep{kim_minimax_2022}. This technique leads to an improvement of the adaptive technique used in \citet{Lam-Weil2021MinimaxConstraint}, which resorts to a simple upper bound for the variance of the U-statistic along with Chebyshev's inequality.
 	
@@ -1025,10 +1029,6 @@ For the lower bound analysis, we leverage a recently developed technique by~\cit
 
 
 \begin{table*}
-	\caption{Non-private and private minimax rates for two-sample multinomial and density testing in $\ell_2$ and $\mathbb{L}_2$ separation where $\sampleSize_1$ denotes the minimum sample size and $\privacyParameter$ denotes the privacy level. For multinomial testing, $\alphabetSize$ stands for the number of categories, and for density testing, $\smoothness$ represents the smoothness parameter.
-		The rates exhibit elbow effects{\textemdash}phase transitions at specific levels of privacy.
-		See Section~\ref{section:twosample_disc} and~\ref{section:twosample_conti} for details.
-	}
 	%\renewcommand{\arraystretch}{3.5}
 	\label{table:rates}
 	\small
@@ -1072,6 +1072,10 @@ For the lower bound analysis, we leverage a recently developed technique by~\cit
 			\bottomrule
 		\end{tabular}
 	\end{center}
+				\caption{Non-private and private minimax rates for two-sample multinomial and density testing in $\ell_2$ and $\mathbb{L}_2$ separation where $\sampleSize_1$ denotes the minimum sample size and $\privacyParameter$ denotes the privacy level. For multinomial testing, $\alphabetSize$ stands for the number of categories, and for density testing, $\smoothness$ represents the smoothness parameter.
+		The rates exhibit elbow effects{---}phase transitions at specific levels of privacy.
+		See Section~\ref{section:twosample_disc} and~\ref{section:twosample_conti} for details.
+	}
 \end{table*}
 %
 \subsection{Notation}\label{subsection:notation}
@@ -1095,7 +1099,7 @@ $$
 $$
 Given the privacy parameter $\alpha > 0$, we write $z_\alpha := e^{2\alpha}- e^{-2\alpha} = 2 \sinh(2\alpha)$. Throughout, a constant that only depends on parameters $\theta_1,\theta_2,\ldots$ is denoted as $C(\theta_1,\theta_2,\ldots)$. The indicator function $\indicator{\mathcal{A}} $ takes value 1 if the event $\mathcal{A}$ is true and 0 otherwise.
 
-\subsection{Outline of the paper}
+\subsection{Outline of the Paper}
 The remainder of the paper is organized as follows:
 Section~\ref{section:background} introduces the necessary background on LDP, the minimax framework, and the permutation procedure.
 Section~\ref{section:twosample_disc} illustrates the minimax analysis for multinomial testing under LDP and the optimal permutation testing procedure.
@@ -1106,8 +1110,8 @@ Finally, Section~\ref{section:simulation} presents numerical validation of the p
 This section introduces the notion of local differential privacy and two-sample testing under LDP. We then explain the minimax framework for two-sample testing under LDP, along with the permutation test procedure considered throughout this paper. 
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Two-sample testing under local differential privacy constraint}\label{subsection:LDPtwosampleFormulation}
-Let $\distClassGeneric$ denote the space of pairs of distributions of interest{\textemdash}multinomial distributions taking values in $[k]$ or continuous distributions taking values in $[0,1]^{\dimDensity}$. Given a pair of distributions $(P_\rvY, P_\rvZ) \in \distClassGeneric$, for each $\sampleIndexOne \in [\sampleSize_1]$, the $\sampleIndexOne$th  data owner draws $\rvY_\sampleIndexOne$ from $P_\rvY$ independently from the others. Similarly, for each $\sampleIndexTwo \in [\sampleSize_2]$,  the $\sampleIndexTwo$th data owner independently draws $\rvZ_\sampleIndexTwo$ from $P_\rvZ$.
+\subsection{Two-Sample Testing under Local Differential Privacy Constraint}\label{subsection:LDPtwosampleFormulation}
+Let $\distClassGeneric$ denote the space of pairs of distributions of interest{---}multinomial distributions taking values in $[k]$ or continuous distributions taking values in $[0,1]^{\dimDensity}$. Given a pair of distributions $(P_\rvY, P_\rvZ) \in \distClassGeneric$, for each $\sampleIndexOne \in [\sampleSize_1]$, the $\sampleIndexOne$th  data owner draws $\rvY_\sampleIndexOne$ from $P_\rvY$ independently from the others. Similarly, for each $\sampleIndexTwo \in [\sampleSize_2]$,  the $\sampleIndexTwo$th data owner independently draws $\rvZ_\sampleIndexTwo$ from $P_\rvZ$.
 We allow the sample sizes $\sampleSize_1$ and $\sampleSize_2$ to differ, and assume $\sampleSize_1 \leq \sampleSize_2$, without loss of generality, throughout this paper.  We denote the pooled sample size as $\sampleSize := \sampleSize_1 + \sampleSize_2$. Under the LDP constraint, each owner releases only a randomized transformation of their raw sample as follows:
 %%%%%%%%%%%%%%%%% Local differential privacy defintion %%%%%%%%%%%%%%%%%%%%
 \begin{definition}[Local differential privacy]\label{def:LDP}
@@ -1154,8 +1158,7 @@ Unless otherwise specified, all statements regarding expectations and variances 
 \end{equation*}
 for $i \in [n_1]$ and $j \in [n_2]$ where the raw samples are marginalized out.
 
-\subsection{Non-private and LDP minimax framework for two-sample testing}\label{subsection:testing}
-
+\subsection{Non-Private and LDP Minimax Framework for Two-Sample Testing}\label{subsection:testing}
 Let $\distClassGeneric_0$ and $\distClassGeneric_1$ denote the collection of null distributions, and the collection of alternative distributions, respectively. In the minimax framework, we focus on a subset of $\distClassGeneric_1$, denoted as $\distClassGeneric_1(\minSep_{\sampleSize_1, \sampleSize_2})$, where $\minSep_{\sampleSize_1, \sampleSize_2}$ indicates a minimum separation between $\distClassGeneric_1(\minSep_{\sampleSize_1, \sampleSize_2})$. 
 
 For a given privacy mechanism $Q$, the curator evaluates a test function
@@ -1226,7 +1229,7 @@ $\minSep_{\sampleSize_1, \sampleSize_2}^\ast
 where $\Phi_\gamma$ denotes the set of all level $\gamma$ tests without privacy constraints. 
 Since it is mostly infeasible to obtain a test that achieves the exact minimax risk in a nonparametric setting, we follow the convention~\citep{Ingster1994Bin,Ingster2000AdaptiveTests,Baraud2002minimax} and focus on minimax \emph{rate} optimality. In particular, we say that a test is minimax rate optimal if its uniform separation rate is upper bounded by the minimax testing rate up to some constant. 
 
-\subsection{Permutation testing procedure} \label{subsection:permutation}
+\subsection{Permutation Testing Procedure} \label{subsection:permutation}
 The permutation test is a simple yet powerful method to calibrate a test statistic, yielding a valid $\gamma$-level test under exchangeability of the samples, 
 i.e., when the distribution of the permuted samples is the same as the distribution of the original samples.
 Note that some $\privacyParameter$-LDP mechanisms might violate exchangeability even when the raw samples are i.i.d.
@@ -1263,10 +1266,10 @@ Regarding type II error, the MC-based permutation test using the U-statistic in~
 
 
 
-\section{Two-sample testing for multinomials under LDP constraint}\label{section:twosample_disc}  
+\section{Two-Sample Testing for Multinomials under LDP Constraint}\label{section:twosample_disc}  
 Having introduced the background, we now proceed to present the main results of this paper. In Section~\ref{subsection:twosample_multinomial_rates}, we consider the problem of comparing two multinomial distributions, and establish the corresponding minimax rate under the LDP constraint. The upper bound for the minimax rate is attained by the LDP permutation tests that we propose in Section~\ref{subsection:twosample_disc_upperbound}. These tests serve as crucial components in establishing the minimax rate for continuous data, as discussed in Section~\ref{section:twosample_conti}.
 
-\subsection{Private minimax rates for two-sample multinomial testing}\label{subsection:twosample_multinomial_rates}
+\subsection{Private Minimax Rates for Two-Sample Multinomial Testing}\label{subsection:twosample_multinomial_rates}
 The problem of interest is formulated as follows. Let $\distclassMultinomial$ be the family of pairs of multinomial probability vectors with $\alphabetSize$ categories and $(\probVec_\rvY , \probVec_\rvZ) \in \distclassMultinomial$ be the probability vectors of the unknown data-generating multinomial distributions. The curator obtains two sets of $\privacyParameter$-LDP views $\sampleSets{\rvYPriv}{\sampleIndexOne}{\sampleSize_1}$ and $\sampleSets{\rvZPriv}{\sampleIndexTwo}{\sampleSize_2}$ as described in Section~\ref{subsection:LDPtwosampleFormulation}
 and decides whether $(\probVec_Y , \probVec_Z)$ came from $\distClassGeneric_{0,\mathrm{multi}} := \{ (\probVec_\rvY , \probVec_\rvZ) \in \distclassMultinomial: \probVec_\rvY = \probVec_\rvZ \}$ or
 \begin{equation}\label{eq:settingTwosampleDisc}
@@ -1333,7 +1336,7 @@ We now discuss the proof of Theorem~\ref{theorem:twosample_multinomial_rates}, a
 	and presents the testing procedure that achieves the upper bound. 
 \end{itemize}
 
-\subsection{Privacy mechanisms and testing procedure for the upper bound}\label{subsection:twosample_disc_upperbound}
+\subsection{Privacy Mechanisms and Testing Procedure for the Upper Bound}\label{subsection:twosample_disc_upperbound}
 This subsection is dedicated to explaining the private permutation testing procedure which achieves the upper bound stated in~\eqref{rate:twosample_disc}. As mentioned earlier, this procedure builds on the U-statistic~\citep{kim_minimax_2022} estimating the squared $\ell_2$ distance $\| \probVec_\rvTwo - \probVec_\rvThree \|_2^2$.
 In a similar way, we deal with the U-statistic of $\alphabetSize \| \probVec_\rvTwo - \probVec_\rvThree \|_2^2$, but a notable difference is that ours is based on $\privacyParameter$-LDP views generated by privacy mechanisms. Before formally introducing the test statistic, let us explain the considered LDP mechanisms: Laplace, discrete Laplace, and \texttt{RAPPOR} mechanisms.
 \begin{itemize}
@@ -1482,10 +1485,10 @@ Despite the fact that all three mechanisms ensure the minimax separation rate, t
 
 Another LDP mechanism for multinomial testing suggested by \citet{Gaboardi2016DPChisq} is the generalized randomized response mechanism (\texttt{GenRR}). In contrast to \texttt{RAPPOR} mechanism, which destroys the structure of one-hot vectors, the generalized randomized response mechanism maintains the one-hot vector format while randomly altering the position of the non-zero component. It turns out, however, that the test based on the generalized randomized response mechanism is notoriously suboptimal in terms of the separation rate, as we show in Appendix~\ref{genrr_suboptimal_theory}. Demonstrating this negative result requires a careful asymptotic analysis of the U-statistic, which we want to highlight as our technical contribution.
 %
-\section{Two-sample testing for H\"{o}lder and Besov densities under LDP}\label{section:twosample_conti}
+\section{Two-Sample Testing for H\"{o}lder and Besov Densities under LDP}\label{section:twosample_conti}
 In this section, we switch gears to testing for equality between two multivariate densities under the LDP constraint. To this end, we consider two classes of smooth densities, namely the H\"{o}lder ball and Besov ball, and establish the minimax rate in terms of the $\mathbb{L}_2$ distance for each class. Especially, we derive the upper bound for the minimax rate by building on the multinomial permutation test introduced in Section~\ref{subsection:twosample_disc_upperbound} with a careful discretization scheme. We also introduce an aggregated test, which is adaptive to the unknown smoothness parameter. 
 
-\subsection{H\"{o}lder and Besov smootheness classes}\label{subsection:smoothness_class}
+\subsection{H\"{o}lder and Besov Smootheness Classes}\label{subsection:smoothness_class}
 We start by formally defining the H\"{o}lder ball and Besov ball.
 The H\"{o}lder ball extends the notion of Lipschitz continuity and can be thought of as functions with bounded fractional derivatives.
 The following definition of the H\"{o}lder ball rephrases the one stated in Section 2.1 of~\citet{Arias-Castro2018RememberDimension}.
@@ -1599,7 +1602,7 @@ With regard to $\besovBall{2}{q}$, extending the analysis of \citep{Lam-Weil2021
 The details of the basis functions are provided in Appendix~\ref{appendix:basis}.
 We note that there is no restriction on the microscopic parameter $q$.
 %
-\subsection{Private minimax testing rates for two-sample density testing}\label{subsection:twosample_conti_rates}
+\subsection{Private Minimax Testing Rates for Two-Sample Density Testing}\label{subsection:twosample_conti_rates}
 Building on the smooth distribution classes defined in Definition~\ref{def:smooth_distribution_class}, we formally state the two problems of interest and present the minimax testing rate that applies to both problems. In this subsection, we assume that the smoothness parameter $s$ for H\"{o}lder ball and Besov ball is known. We deal with the case of unknown $s$ in Section~\ref{subsection:adaptive}. %
 The density testing problems  are defined  as follows.
 Assume that the data-generating distributions $(P_{\vectorize{Y}}, P_{\vectorize{Z}})$ is contained in a class $\distClassGeneric$.
@@ -1694,7 +1697,7 @@ We now discuss the proof of Theorem~\ref{theorem:twosample_conti_rate}, and a de
 
 
 
-\subsection{Minimax optimal privacy mechanism and permutation testing procedure}\label{subsection:twosample_conti_upperbound}
+\subsection{Minimax Optimal Privacy Mechanism and Permutation Testing Procedure}\label{subsection:twosample_conti_upperbound}
 %last revised: october 2024
 Our proposed density test applies our proposed private multinomial test to data discretized by binning the density support into a certain sample-size dependent number of bins, defined as follows: 
 \begin{align*}
@@ -1754,7 +1757,7 @@ $
 
 We note that our choice of $\binNum$ in~\eqref{eq:kappaValueTwosample} depends on the smoothness parameter $\smoothness$, typically unknown. In the next subsection, we introduce an adaptive procedure that accommodates this unknown $\smoothness$ without significant loss of power.
 
-\subsection{Adaptive procedure for private two-sample density testing }\label{subsection:adaptive}%last revised: october 2024
+\subsection{Adaptive Procedure for Private Two-Sample Density Testing }\label{subsection:adaptive}%last revised: october 2024
 To achieve the tight upper bound in Theorem~\ref{theorem:twosample_conti_rate} via our proposed test in Section~\ref{subsection:twosample_conti_upperbound}, the number of binsmust be determined based on the unknown smoothness parameter~$\smoothness$. To circumvent this requirement, this section introduces a multiscale permutation testing procedure that  adapts to the unknown $\smoothness$. 
 Following \citet{Ingster2000AdaptiveTests}, it aggregates test results from different bin numbers using a Bonferroni-corrected significance level. This procedure does not significantly sacrifice power compared to the one relying on the true value of $s$.
 
@@ -1876,7 +1879,7 @@ We briefly discuss the proof of Theorem~\ref{theorem:twosample_adaptive_upper}; 
 
 
 
-\section{Numerical results}\label{section:simulation}
+\section{Numerical Results}\label{section:simulation}
 In this section, we conduct a series of simulation studies to illustrate the finite sample performance of our proposed tests. Specifically, we investigate the privacy-utility trade-offs by varying the privacy level parameter $\privacyParameter$. These simulation studies aim to confirm our theoretical results regarding these trade-offs, and also to demonstrate the rate at which the power diminishes as the privacy parameter $\privacyParameter$ decreases in practical scenarios. 
 
 
@@ -2036,9 +2039,9 @@ More information about this disclosure can be found on the JMLR website.}
 	\end{itemize}
 	
 	
-	\section{Preliminary results}\label{section:appendix_prelim}
+	\section{Preliminary Results}\label{section:appendix_prelim}
 	This section presents the technical lemmas, constructions, and calculations used in the main proofs.
-	\subsection{First two moments of discrete Laplace noise}\label{proof:discLapUVar}
+	\subsection{First Two Moments of Discrete Laplace Noise}\label{proof:discLapUVar}
 	We analyze the first two moments of a discrete Laplace noise random variable to establish the upper bound for the separation rate of our private test in Theorem~\ref{theorem:twosample_multinomial_rates}. The next lemma shows that the discrete noise in discrete Laplace mechanism (Definition \ref{def:DiscLapU_formal}) has mean zero and variance at most $8\alphabetSize/\privacyParameter^2$, which matches the variance of the continuous noise in Laplace mechanism (Definition \ref{def:LapU_formal}) with the same privacy guarantee.
 	\begin{lemma}\label{lemma:discLapU_Variance}
 		If $W$ follows $ \mathrm{DL}(\discLapUParam)$ defined in~\eqref{def:discrete_laplace_distribution} and Definition~\ref{def:DiscLapU_formal}, we have
@@ -2096,7 +2099,7 @@ More information about this disclosure can be found on the JMLR website.}
 		\end{proof}
 	\end{lemma}
 	
-	\subsection{Summary statistics  of \texttt{RAPPOR} mechanism}\label{appendix:rappor_moment}
+	\subsection{Summary Statistics  of \texttt{RAPPOR} Mechanism}\label{appendix:rappor_moment}
 	This section provides calculations for the summary statistics of the \texttt{RAPPOR} private views, which are used in Appendix~\ref{proof:rappor_optimal}. First, Lemma~\ref{lemma:rappor_var} presents the exact calculation of the expectation of the U-statistic in~\eqref{def:statistic_elltwo}, as well as the variance and covariance of the entries of a \texttt{RAPPOR} private view.
 	
 	\begin{lemma}[Summary statistics  of \texttt{RAPPOR} private views]
@@ -2306,9 +2309,6 @@ More information about this disclosure can be found on the JMLR website.}
 		The same type of inequalities also hold for $\private{\rvThree}_{1 \vectorIndex}$ and $\private{\rvThree}_{1 \vectorIndex'}$.
 	\end{lemma}
 	\begin{proof}
-		
-		
-		%
 		For~\eqref{inequality:var_diff_squared}, we have 
 		\begin{align*}
 			\sum_{\vectorIndex=1}^\alphabetSize
@@ -2482,7 +2482,7 @@ More information about this disclosure can be found on the JMLR website.}
 		step $(c)$ uses the fact that $\|\probVec_\rvTwo\|_2^2 \leq 1$.
 	\end{proof}
 	%
-	\subsection{Construction of multivariate Haar wavelet basis}\label{appendix:basis}
+	\subsection{Construction of Multivariate Haar Wavelet Basis}\label{appendix:basis}
 	%Last revised: september 2024
 	We  outline the construction of multivariate Haar wavelets, following \citet{Gine2015Besov}, Section 4.3.6, and \citet{Autin2010Wavlet}, Section 2.
 	%
@@ -2559,7 +2559,7 @@ More information about this disclosure can be found on the JMLR website.}
 	\end{equation}
 	
 	
-	\subsection{Density discretization error analysis}\label{appendix:disc_error}
+	\subsection{Density Discretization Error Analysis}\label{appendix:disc_error}
 	This section analyzes the error arising from comparing discretized multinomial probability vectors instead of the original multivariate densities.
 	Given the number of bins $\binNum$, let ${B_1, \dots, B_{\binNum^{\dimDensity}}}$ enumerate  $\dimDensity$-dimensional hypercubes with side length $1/\binNum$. For a density $f_{\vectorize{Y}}$, its step function approximation is defined as:
 	\begin{equation}\label{step_function_approx}
@@ -2810,11 +2810,7 @@ More information about this disclosure can be found on the JMLR website.}
 		\end{equation*}
 	\end{proof}
 	%
-	%
-	%
-	
-	
-	\subsection{Gaussian approximation of one-sample U-statistic}
+	\subsection{Gaussian Approximation of One-Sample U-statistic}
 	The theorems presented here are used to establish a negative result for our statistic in~\eqref{def:statistic_elltwo} when applied with the generalized randomized response mechanism. First, Theorem~\ref{appendix:genrr_powerless:theorem_null} restates a result from \citet{kim_multinomial_2020}, which demonstrates the asymptotic normality of a one-sample U-statistic, which is a special case of our statistic in~\eqref{def:statistic_elltwo} with either $n_1 = \infty$ or $n_2 = \infty$ under the uniform null hypothesis.
 	\begin{theorem}\label{appendix:genrr_powerless:theorem_null}[Corollary 3.3 of \citet{kim_multinomial_2020}]
 		Consider a multinomial goodness-of-fit test where the null hypothesis is a discrete uniform distribution with $\alphabetSize$ categories, whose probability vector is denoted as $\boldsymbol{\pi}_0$. Let $\{\mathbf{Y}_i \}_{i=1}^\sampleSize$ be a random sample represented in one-hot vector form drawn from $\boldsymbol{\pi}_0$. Define the U-statistic as:
@@ -3057,7 +3053,7 @@ More information about this disclosure can be found on the JMLR website.}
 	
 	In this section, we prove the minimax rate result for multinomial testing presented in Theorem~\ref{theorem:twosample_multinomial_rates}, first focusing on the upper bound result followed by the lower bound result. 
 	
-	\subsection{Upper bound} \label{sec: upper bound}
+	\subsection{Upper Bound} \label{sec: upper bound}
 	This section demonstrates that the permutation test with the U-statistic proposed in~\eqref{def:statistic_elltwo}, in conjunction with one of the mechanisms $\{\texttt{LapU}, \texttt{DiscLapU}, \texttt{RAPPOR}\}$, achieves a tight upper bound presented in Theorem~\ref{theorem:twosample_multinomial_rates}.
 	Since the permutation procedure controls the type I error, it suffices to prove that the condition in Theorem~\ref{theorem:twosample_multinomial_rates} guarantees type II error control.
 	Let 
@@ -3229,8 +3225,10 @@ More information about this disclosure can be found on the JMLR website.}
 	
 	We now verify the previous preliminary steps in order, first assuming the Laplace-noise based mechanisms.
 	
-	\subsubsection{Upper bound through Laplace or discrete Laplace mechanism}\label{proof:multinomial_upper_bound_first_moment}
+	\subsubsection{Upper Bound Through Laplace or Discrete Laplace Mechanism}\label{proof:multinomial_upper_bound_first_moment}
 	Since the analysis for Laplace and discrete Laplace mechanism is similar, we present the proof using the former (see Remark~\ref{remark: discrete laplace noise} for details).
+	
+
 	\begin{itemize}
 	\item \textbf{Step 1: Upper bounds for the moments.}
 	We start by bounding the variance of conditional expectation terms.
@@ -3941,7 +3939,7 @@ More information about this disclosure can be found on the JMLR website.}
 	$
 	This completes the proof of the upper bound through the (discrete) Laplace  mechanism.
 	\end{itemize}
-	\subsubsection{Upper bound through \texttt{RAPPOR} mechanism}\label{proof:rappor_optimal}
+	\subsubsection{Upper Bound Through \texttt{RAPPOR} Mechanism}\label{proof:rappor_optimal}
 	While we follow the same two main steps as in Appendix~\ref{proof:multinomial_upper_bound_first_moment}, proving a tight upper bound under the \texttt{RAPPOR} mechanism requires a more delicate analysis due to the dependence and bias inherent in private views. %\ilmun{private views? remove --} the mechanism. 
 	To elaborate, note that the entries of an $\privacyParameter$-LDP view under the \texttt{RAPPOR} mechanism are dependent Bernoulli random variables. Specifically, 
 	the $\vectorIndex$th entry of $\tilde{\vectorize{\rvTwo}}_{i}$,
@@ -5308,7 +5306,7 @@ More information about this disclosure can be found on the JMLR website.}
 	respectively, both of which holds for $\privacyParameter>1$.
 	Combining \eqref{rappor_final_high_privacy} and \eqref{rappor_final_low_privacy}, we obtain the following inequality:
 	\begin{align*}
-		\max \;
+		\max \;&
 		\biggl\{
 		\frac{
 			\normSqMultinomMax^{1/4}
@@ -5323,7 +5321,7 @@ More information about this disclosure can be found on the JMLR website.}
 			\privacyParameterrappor
 			\sampleSize_1^{1/2}}
 		\biggr\}
-		&=
+		\\&=
 		\mathds{1}(\alpha \leq 1) \cdot
 		\max \;
 		\biggl\{
@@ -5393,13 +5391,13 @@ More information about this disclosure can be found on the JMLR website.}
 	This completes the proof of the upper bound through \texttt{RAPPOR} mechanism.
 \end{itemize}
 	
-	\subsection{Lower bound}
+	\subsection{Lower Bound}
 	The lower bound result follows by combining the lower bound results of Theorem 3.2 in \citep{Lam-Weil2021MinimaxConstraint} for the one-sample problem under LDP with results from \citep{chan2014optimal,kim_minimax_2022} for the two-sample problem without privacy constraints. Hence we omit the details. 
 	
 	\section{Proof of Theorem~\ref{theorem:twosample_conti_rate}}\label{proof:twosample_conti_rates}
 	Here we prove the upper bound and lower bound results for density two-sample testing.
 	We start with the upper bound~(Appendix~\ref{proof_theorem:twosample_conti_rate}) and move onto the lower bound~(Appendix~\ref{proof:twosample_conti_lower_bound}).
-	\subsection{Upper bound}\label{proof_theorem:twosample_conti_rate}
+	\subsection{Upper Bound}\label{proof_theorem:twosample_conti_rate}
 	The proof of the upper bound  proceeds in two steps, where step 1 leverage the result from multinomial testing (Lemma~\ref{appendix:lemma:discrete_upper_bound}), and step 2 utilizes the discretization error analysis (Appendix~\ref{appendix:disc_error}).
 	\begin{itemize}
 	\item \textbf{Step 1: separation condition for the probability vectors.}
@@ -5601,7 +5599,7 @@ More information about this disclosure can be found on the JMLR website.}
 	This concludes the proof of the upper bound result of Theorem~\ref{theorem:twosample_conti_rate}.
 	\end{itemize}
 	%
-	\subsection{Lower bound}\label{proof:twosample_conti_lower_bound}
+	\subsection{Lower Bound}\label{proof:twosample_conti_lower_bound}
 	By the argument in \citet{Arias-Castro2018RememberDimension}, the lower bound for the minimax testing rate in the one-sample problem, denoted as $\separation^\ast_{n_1, \privacyParameter}$, also provides a lower bound for the minimax rate in two-sample case, denoted as $\separation^\ast_{n_1, n_2, \privacyParameter}$. 
 	Thus, we focus on bounding $\separation^\ast_{n_1, \privacyParameter}$.
 	In the one-sample setting,
@@ -7113,9 +7111,9 @@ More information about this disclosure can be found on the JMLR website.}
 	%
 	This completes the proof of~Theorem~\ref{theorem:twosample_adaptive_upper}.
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	\section{Supplementary information for the numerical results}\label{appendix:simulation}
+	\section{Supplementary Information for the Numerical Results}\label{appendix:simulation}
 	This section describes the baseline methods for evaluating our proposed methods in Section \ref{section:simulation} and presents additional numerical results.
-	\subsection{Baseline methods}\label{appendix:baseline}
+	\subsection{Baseline Methods}\label{appendix:baseline}
 	To the best of our knowledge, no methods exist for nonparametric two-sample testing under LDP. For a reliable evaluation, we adapt two one-sample testing methods from \citet{Gaboardi2018LDPChisq} to the two-sample setting for our simulations. The first combines the generalized randomized response (\texttt{GenRR}) with a two-sample chi-square statistic (\texttt{Chi}), while the second integrates the \texttt{RAPPOR} mechanism with a projected two-sample chi-square statistic (\texttt{ProjChi}), both calibrated using asymptotic chi-square null distributions. Lastly, we adopt the combination of the generalized randomized response mechanism and $\ell_2$-type U-statistic~\eqref{def:statistic_elltwo} as the third baseline method.
 	\begin{itemize}
 	\item \textbf{Baseline method 1: \texttt{GenRR}+\texttt{Chi}.} We  introduce the generalized randomized response mechanism.
@@ -7297,7 +7295,7 @@ More information about this disclosure can be found on the JMLR website.}
 	and $\Pi = I_\alphabetSize - \mathbf{1} \mathbf{1}^\top$ is the projection matrix to the subspace spanned by the one-vector $\mathbf{1}$.
 	The test statistic  $T^{\mathrm{proj}}_{\sampleSize_1, \sampleSize_2}$~\eqref{def:statistic:projchi} can  be calibrated using its asymptotic null distribution:
 	
-	\begin{lemma}[Asymptotic null distribution of \texttt{rappor+ProjChi}] \label{asymp_rappor_projchi} 
+	\begin{lemma}[Asymptotic null distribution of \texttt{RAPPOR+ProjChi}] \label{asymp_rappor_projchi} 
 		Assume the same multinomial setting as in Lemma~\ref{asymp_genrr_chi}.
 		Fix the privacy level $\privacyParameter>0$.
 		Under the null hypothesis $\mathbf{p}_Y = \mathbf{p}_Z$, for each pair of sample sizes $(n_1, n_2)$, compute the statistic $T_{n_1, n_2}$ based on the  \textnormal{\texttt{RAPPOR}} $\privacyParameter$-LDP views $\{\tilde{\mathbf{Y}}_i\}_{i \in [n_1]}$ and $\{\tilde{\mathbf{Z}}_i\}_{i \in [n_2]}$, generated from $\mathbf{p}_Y$ and $\mathbf{p}_Z$ , respectively. Then, as $n_1, n_2 \to \infty$, we have $T^{\mathrm{proj}}_{\sampleSize_1, \sampleSize_2}
@@ -7306,7 +7304,7 @@ More information about this disclosure can be found on the JMLR website.}
 	The proof, provided in Appendix~\ref{proof:asymp_rappor_projchi}, follows a similar approach to the proof of Lemma~\ref{asymp_genrr_chi}. The key difference is that the \texttt{RAPPOR} $\privacyParameter$-LDP views are no longer multinomial samples.
 	\item \textbf{Baseline method 3: \texttt{GenRR}+$\ell_2$.} This method applies the $\ell_2$-type U-statistic in~\eqref{def:statistic_elltwo} to the \texttt{GenRR} $\privacyParameter$-LDP views, with calibration via  permutation procedures.
 	\end{itemize}
-	\subsection{Power comparison of \texttt{RAPPOR}-based methods under additional scenarios }\label{appendix:powerlaw}
+	\subsection{Power Comparison of \texttt{RAPPOR}-Based Methods under Additional Scenarios}\label{appendix:powerlaw}
 	%
 	Within the tests based on the \texttt{RAPPOR} mechanism, as shown in Figures~\ref{fig:power_multinomial}, \ref{fig:power_density_location}, and~\ref{fig:power_density_scale}, we observe that \texttt{RAPPOR}+\texttt{ProjChi} and \texttt{RAPPOR}+$\ell_2$ exhibit comparable performance. In certain cases, \texttt{RAPPOR}+\texttt{ProjChi} demonstrates slightly greater power. The dominance of one test over the other depends on the specific scenario, particularly on the privacy level $\privacyParameter$ and the relative signal strength of the chi-square divergence versus the $\ell_2$ distance. 
 	
@@ -7338,7 +7336,7 @@ More information about this disclosure can be found on the JMLR website.}
 	$
 	where $\privacyParameterrappor = \privacyParameter/4 + o(\privacyParameter)$ and $\smallNumberrappor = 1/2 + o(1)$, with \( o(1) \) representing a term that vanishes as $\privacyParameter \to 0$. Threrfore, as $\privacyParameter$ decreases, the distributions approach uniform multinomial distributions, diminishing the difference between chi-square divergence and $\ell_2$ distance in the signal.
 	
-	\subsection{Numerical result for density testing for scale alternatives}\label{simul_scale}
+	\subsection{Numerical Result for Density Testing for Scale Alternatives}\label{simul_scale}
 	Similar to the location alternative scenario~\eqref{alternative:density_location}, we analyze scenarios involving covariance differences between two $\dimDensity$-dimensional Gaussian distributions
 	$P_{\vectorize{\rvTwo}} = \mathcal{N}(
 	\boldsymbol{\mu}_{\vectorize{\rvTwo}}
@@ -7377,7 +7375,7 @@ More information about this disclosure can be found on the JMLR website.}
 	\end{figure}
 	The power results against the scale  alternatives, provided in Figure~\ref{fig:power_density_scale}, shows similar patterns to Figure~\ref{fig:power_density_location}.
 	
-	\subsection{Proof of asymptotic null distributions}
+	\subsection{Proof of Asymptotic Null Distributions}
 	This section presents the proof of chi-square asymptotic null distributions of $\texttt{GenRR+Chi}$ and $\texttt{RAPPOR+Chi}$ $\privacyParameter$-LDP tests introduced in Appendix~\ref{appendix:baseline}, starting with $\texttt{GenRR+Chi}$.
 	\subsubsection{Proof of Lemma~\ref{asymp_genrr_chi}}\label{proof:asymp_genrr_chi}
 	Throughout the proof, assume that the null hypothesis $\probVec_{\rvTwo} = \probVec_{\rvZ}$ holds. Thus, for each $\vectorIndex \in [\alphabetSize]$, we have $\probVecElement{\tilde{\rvTwo}}{\vectorIndex} = \probVecElement{\tilde{\rvThree}}{\vectorIndex}$. Without loss of generality, we  denote all $\probVecElement{\tilde{\rvThree}}{\vectorIndex}$ as $\probVecElement{\tilde{\rvTwo}}{\vectorIndex}$.
@@ -7787,7 +7785,7 @@ More information about this disclosure can be found on the JMLR website.}
 	%
 	Therefore, by a standard result (e.g., Lemma 17.1 of \citet{van_der_vaart_asymptotic_1998}), the test statistic~\eqref{def:statistic:projchi}, which is equivalent to squared $\ell_2$ norm of the random vector on the left-hand side of~\eqref{appendix:proof:rappor_project_statistic}, converges to a chi-square distribution with $\alphabetSize - 1$ degrees of freedom.
 	%
-	\section{Suboptimality of the generalized randomized response}\label{genrr_suboptimal_theory}
+	\section{Suboptimality of Generalized Randomized Response}\label{genrr_suboptimal_theory}
 	This section illustrates that  the generalized randomized response mechanism in~\eqref{def:genrr} can lead to suboptimal power. Specifically, we show that the \texttt{GenRR}+$\ell_2$ test performs suboptimally in certain privacy regimes where the number of categories $\alphabetSize$ increases with the sample size $\sampleSize_1$, but the privacy level $\privacyParameter$ is fixed. This negative result is further supported by our numerical studies in Section~\ref{section:simulation}. 
 	
 	\begin{theorem}[Asymptotic powerlessness of \texttt{GenRR}+$\ell_2$ test]\label{genrr_suboptimal}
@@ -8318,9 +8316,9 @@ More information about this disclosure can be found on the JMLR website.}
 			\end{align*}
 			
 			
-			where $(a)$ and $(c)$ utilize the equations in~\eqref{power_of_norms_calculation}
+			where steps $(a)$ and $(c)$ utilize the equations in~\eqref{power_of_norms_calculation}
 			and
-			$(b)$ uses the independence between samples, as well as the exclusiveness and symmetry of the events.
+			step $(b)$ uses the independence between samples, as well as the exclusiveness and symmetry of the events.
 			Now $\mE[W_2]$ is calculated as
 			\begin{align*}
 				\mE[W_2]&=
@@ -8581,16 +8579,16 @@ More information about this disclosure can be found on the JMLR website.}
 		\end{itemize}
 		Since all three conditions of Theorem~\ref{appendix:genrr_powerless:theorem:alternative_dist} are verified,  the asymptotic distribution in~\eqref{genrr_ustat_asympototic_dist} is confirmed.
 		
-		\paragraph{Power function.}
+		\item \textbf{Power function.}
 		Using the critical value in~\eqref{appendix:genrr_powerless:critical_value}
 		and the asymptotic alternative distribution established in~\eqref{genrr_ustat_asympototic_dist}, 
 		under the asymptotic regime in~\eqref{appendix:genrr_powerless:asymptotic_regime},
-		the power function can be written as
+		the power function is written as:
 		\begin{align*}
-			\gamma_{\sampleSize_1, \alphabetSize, \privacyParameter}
+			\gamma&_{\sampleSize_1, \alphabetSize, \privacyParameter}
 			(\probVec_\rvTwo,
 			\probVec_\rvThree)
-			&=
+			\\&=
 			\mathbb{P}_{H_1} \!
 			\left(
 			U_{n_1}
