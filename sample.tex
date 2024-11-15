@@ -7117,9 +7117,9 @@ More information about this disclosure can be found on the JMLR website.}
 	This section describes the baseline methods for evaluating our proposed methods in Section \ref{section:simulation} and presents additional numerical results.
 	\subsection{Baseline methods}\label{appendix:baseline}
 	To the best of our knowledge, no methods exist for nonparametric two-sample testing under LDP. For a reliable evaluation, we adapt two one-sample testing methods from \citet{Gaboardi2018LDPChisq} to the two-sample setting for our simulations. The first combines the generalized randomized response (\texttt{GenRR}) with a two-sample chi-square statistic (\texttt{Chi}), while the second integrates the \texttt{RAPPOR} mechanism with a projected two-sample chi-square statistic (\texttt{ProjChi}), both calibrated using asymptotic chi-square null distributions. Lastly, we adopt the combination of the generalized randomized response mechanism and $\ell_2$-type U-statistic~\eqref{def:statistic_elltwo} as the third baseline method.
-	
-	\paragraph{Baseline method 1: \texttt{GenRR}+\texttt{Chi}.} We first  introduce the generalized randomized response mechanism.
-	\begin{definition}[Generalized randomized response mechanism for multinomial data: \texttt{GenRR}] \label{def:GenRR_formal}
+	\begin{itemize}
+	\item \textbf{Baseline method 1: \texttt{GenRR}+\texttt{Chi}.} We  introduce the generalized randomized response mechanism.
+	\begin{definition}[Generalized randomized response   for multinomial data: \texttt{GenRR}] \label{def:GenRR_formal}\quad \\
 		Consider a pooled raw multinomial sample $\{X_i\}_{i \in [n]}$ with $\alphabetSize$ categories. Fix the privacy level $\privacyParameter>0$.  Each data owner perturbs their data point, resulting in the privatized sample $\{\tilde{X}_{i}\}_{i \in [n]} = \{\tilde{Y}_i\}_{i\in [n_1]} \cup \{\tilde{Z}_i\}_{i \in [n_2]}$; a  multinomial random sample where the $i$th sample $\tilde{\rvOne}_{i}$ represents a modified version of the original $i$th sample $\rvOne_{i}$, with category change
 		from $m \in [\alphabetSize]$ to $\tilde{m} \in [\alphabetSize]$
 		occurring according to the following conditional probabilities:
@@ -7187,7 +7187,7 @@ More information about this disclosure can be found on the JMLR website.}
 		\end{align*}
 	\end{proof}
 	Now we define a chi-square statistic, referred to as \texttt{Chi}, 
-	which takes the outputs of \texttt{GenRR}  as inputs:
+	which takes the \texttt{GenRR} views  as inputs:
 	\begin{equation}\label{def:chi_statistic}
 		T_{\sampleSize_1, \sampleSize_2}
 		:=
@@ -7243,11 +7243,11 @@ More information about this disclosure can be found on the JMLR website.}
 	The test statistic $T_{\sampleSize_1, \sampleSize_2}$~\eqref{def:chi_statistic} can  be calibrated using their asymptotic null distributions:
 	\begin{lemma}[Asymptotic null distribution of \texttt{GenRR+Chi}] \label{asymp_genrr_chi}
 		Fix the number of categories $\alphabetSize$ and the multinomial probability vectors $\mathbf{p}_Y$ and $\mathbf{p}_Z$, each contained in the interior of the set $\Omega := \{\mathbf{p} \in \mathbb{R}^k : p_\vectorIndex > 0, \sum_{m=1}^{k-1} p_m \leq 1, p_{k} = 1 - \sum_{m=1}^{k-1} p_m\}$. Fix the privacy level $\privacyParameter > 0$. 
-		Under the null hypothesis $\mathbf{p}_Y = \mathbf{p}_Z$, for each pair of sample sizes $(n_1, n_2)$, compute the statistic $T_{n_1, n_2}$ based on the  \textnormal{\texttt{GenRR}} $\privacyParameter$-LDP views $\{\tilde{Y}_i\}_{i \in [n_1]}$ and $\{\tilde{Z}_i\}_{i \in [n_2]}$, generated from $\mathbf{p}_Y$ and $\mathbf{p}_Z$ , respectively. Then, as $n_1, n_2 \to \infty$, we have $T_{n_1, n_2} \stackrel{d}{\to} \chi^2_{\alphabetSize-1}$.
+		Under the null hypothesis $\mathbf{p}_Y = \mathbf{p}_Z$, for each pair of sample sizes $(n_1, n_2)$, compute the statistic $T_{n_1, n_2}$ based on the  \textnormal{\texttt{GenRR}} $\privacyParameter$-LDP views $\{\tilde{Y}_i\}_{i \in [n_1]}$ and $\{\tilde{Z}_i\}_{i \in [n_2]}$, generated from $\mathbf{p}_Y$ and $\mathbf{p}_Z$, respectively. Then, as $n_1, n_2 \to \infty$, we have $T_{n_1, n_2} \stackrel{d}{\to} \chi^2_{\alphabetSize-1}$.
 	\end{lemma}
 	The proof given in Appendix~\ref{proof:asymp_genrr_chi} follows directly from Lindberg's central limit theorem (CLT), as outlined in Proposition 2.27 of \citet{van_der_vaart_asymptotic_1998}, and the fact that a chi-square random variable arises from an asymptotic normal distribution with a projection matrix as its covariance. 
 	
-	\paragraph{Baseline method 2: \texttt{RAPPOR}+\texttt{ProjChi}.}
+	\item \textbf{Baseline method 2: \texttt{RAPPOR}+\texttt{ProjChi}.}
 	We propose a projected Hotelling's-type statistic, referred to as \texttt{ProjChi}, which takes the outputs of \texttt{RAPPOR} as input, defined as follows: 
 	\begin{equation}\label{def:statistic:projchi}
 		T^{\mathrm{proj}}_{\sampleSize_1, \sampleSize_2}
@@ -7304,8 +7304,8 @@ More information about this disclosure can be found on the JMLR website.}
 		\stackrel{d}{\to} \chi^2_{\alphabetSize-1}$.
 	\end{lemma}
 	The proof, provided in Appendix~\ref{proof:asymp_rappor_projchi}, follows a similar approach to the proof of Lemma~\ref{asymp_genrr_chi}. The key difference is that the \texttt{RAPPOR} $\privacyParameter$-LDP views are no longer multinomial samples.
-	\paragraph{Baseline method 3: \texttt{GenRR}+$\ell_2$.} This method applies the $\ell_2$-type U-statistic in~\eqref{def:statistic_elltwo} to the \texttt{GenRR} $\privacyParameter$-LDP views, with calibration via  permutation procedures.
-	%
+	\item \textbf{Baseline method 3: \texttt{GenRR}+$\ell_2$.} This method applies the $\ell_2$-type U-statistic in~\eqref{def:statistic_elltwo} to the \texttt{GenRR} $\privacyParameter$-LDP views, with calibration via  permutation procedures.
+	\end{itemize}
 	\subsection{Power comparison of \texttt{RAPPOR}-based methods under additional scenarios }\label{appendix:powerlaw}
 	%
 	Within the tests based on the \texttt{RAPPOR} mechanism, as shown in Figures~\ref{fig:power_multinomial}, \ref{fig:power_density_location}, and~\ref{fig:power_density_scale}, we observe that \texttt{RAPPOR}+\texttt{ProjChi} and \texttt{RAPPOR}+$\ell_2$ exhibit comparable performance. In certain cases, \texttt{RAPPOR}+\texttt{ProjChi} demonstrates slightly greater power. The dominance of one test over the other depends on the specific scenario, particularly on the privacy level $\privacyParameter$ and the relative signal strength of the chi-square divergence versus the $\ell_2$ distance. 
@@ -7881,7 +7881,8 @@ More information about this disclosure can be found on the JMLR website.}
 		\probVec_{\rvThree}
 		\bigr)$,
 		which is a special case of the two-sample statistic $U_{\sampleSize_1, \sampleSize_2}$ in~\eqref{def:statistic_elltwo} with $\sampleSize_2 = \infty$. Now we analyze the power function of the test based on $U_{\sampleSize_1}$ by specifying the critical value and the distribution of the test statistic under the alternative in order.
-		\paragraph{Critical value.}
+		\begin{itemize}
+		\item \textbf{Critical value.}
 		We  specify the critical value by establishing the asymptotic normality of the test statistic under the null by utilizing Theorem~\ref{appendix:genrr_powerless:theorem_null}.
 		Since the statistic~\eqref{appendix:genrr_powerless:test_statistic} is equivalent to the statistic $U_I$ in~\eqref{def:U_stat_kim_2020} of Theorem~\ref{appendix:genrr_powerless:theorem_null}, it suffices to show that $\sampleSize_1 / \sqrt{\alphabetSize} \to \infty$ to establish the asymptotic normality.
 		Note that the assumption	$\sqrt{\alphabetSize} \epsilon = C
@@ -7909,7 +7910,7 @@ More information about this disclosure can be found on the JMLR website.}
 		\end{align*}
 		Here $z_{\gamma}$ denotes the upper $\gamma$ quantile of $W \sim \mathcal{N}(0,1)$ satisfying $\mP(W > z_\gamma) = \gamma$. 
 		
-		\paragraph{Alternative distribution.}
+		\item \textbf{Alternative distribution.}
 		Next we derive that the asymptotic distribution of the test statistic under the alternative specified in~\eqref{appendix:genrr_powerless:alternative}.
 		By substituting $
 		\|
@@ -8709,8 +8710,8 @@ More information about this disclosure can be found on the JMLR website.}
 		\end{align*}
 		where $W \sim \mathcal{N}(0,1)$,   $\Phi$ denotes the cumulative distribution function of $W$, and $o(1)$ refers to a quantity that goes to 0 as $\sampleSize_1$ and $\alphabetSize$ go to $\infty$, in the regime of~\eqref{appendix:genrr_powerless:asymptotic_regime}.
 		The last line in~\eqref{appendix:genrr_powerless:power_function} uses the fact that given that $w\epsilon$ is of the order $\alphabetSize^{-3/4}\sampleSize_1^{-1/2}$, the term in~\eqref{appendix:genrr_powerless:power_function} that converges most slowly to 0 is $\sqrt{1/\alphabetSize}$, which appears both on the second term in the numerator and the first term in the denominator.  It is important to note that this result holds for any sufficiently small $\privacyParameter$, indicating that the \texttt{GenRR}+$\ell_2$ test becomes asymptotically powerless in the regime where the minimax testing rate is $\alphabetSize^{1/4} / (\sampleSize_1 \privacyParameter^2)^{1/2}$.
+\end{itemize}
 	\end{proof}
-	
 \end{appendix}
 
 
