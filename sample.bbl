@@ -1,0 +1,586 @@
+\begin{thebibliography}{80}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acharya et~al.(2015)Acharya, Daskalakis, and
+  Kamath]{Acharya2015Nonprivate}
+Jayadev Acharya, Constantinos Daskalakis, and Gautam Kamath.
+\newblock Optimal testing for properties of distributions.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~28, 2015.
+
+\bibitem[Acharya et~al.(2018)Acharya, Sun, and
+  Zhang]{Acharya2018dPGofTwosample}
+Jayadev Acharya, Ziteng Sun, and Huanyu Zhang.
+\newblock Differentially private testing of identity and closeness of discrete
+  distributions.
+\newblock In \emph{Proceedings of the 32nd International Conference on Neural
+  Information Processing Systems}, pages 6879--6891, 2018.
+
+\bibitem[Acharya et~al.(2019)Acharya, Canonne, Freitag, and
+  Tyagi]{acharya_test_2019}
+Jayadev Acharya, Clement Canonne, Cody Freitag, and Himanshu Tyagi.
+\newblock Test without trust: Optimal locally private distribution testing.
+\newblock In \emph{Proceedings of the 22nd International Conference on
+  Artificial Intelligence and Statistics}, volume~89, pages 2067--2076, 11
+  2019.
+
+\bibitem[Acharya et~al.(2020)Acharya, Canonne, and
+  Tyagi]{Acharya2020Lowerbound}
+Jayadev Acharya, Clément~L Canonne, and Himanshu Tyagi.
+\newblock {Inference Under Information Constraints I: Lower Bounds From
+  Chi-Square Contraction}.
+\newblock \emph{IEEE Transactions on Information Theory}, 66:\penalty0
+  7835--7855, 2020.
+
+\bibitem[Acharya et~al.(2021{\natexlab{a}})Acharya, Canonne, Freitag, Sun, and
+  Tyagi]{Acharya2021Lowerbound}
+Jayadev Acharya, Clément~L Canonne, Cody Freitag, Ziteng Sun, and Himanshu
+  Tyagi.
+\newblock {Inference Under Information Constraints III: Local Privacy
+  Constraints}.
+\newblock \emph{IEEE Journal on Selected Areas in Information Theory},
+  2:\penalty0 253--267, 2021{\natexlab{a}}.
+
+\bibitem[Acharya et~al.(2021{\natexlab{b}})Acharya, Canonne, Liu, Sun, and
+  Tyagi]{Acharya2022InteractiveConstraints}
+Jayadev Acharya, Clément~L Canonne, Yuhan Liu, Ziteng Sun, and Himanshu Tyagi.
+\newblock Interactive inference under information constraints.
+\newblock \emph{2021 IEEE International Symposium on Information Theory
+  (ISIT)}, pages 326--331, 2021{\natexlab{b}}.
+
+\bibitem[Acharya et~al.(2021{\natexlab{c}})Acharya, Kairouz, Liu, and
+  Sun]{acharya_estimating_2021}
+Jayadev Acharya, Peter Kairouz, Yuhan Liu, and Ziteng Sun.
+\newblock Estimating {Sparse} {Discrete} {Distributions} {Under} {Privacy} and
+  {Communication} {Constraints}.
+\newblock In \emph{Proceedings of the 32nd {International} {Conference} on
+  {Algorithmic} {Learning} {Theory}}, volume 132, pages 79--98, March
+  2021{\natexlab{c}}.
+
+\bibitem[Acharya et~al.(2021{\natexlab{d}})Acharya, Sun, and
+  Zhang]{Acharya2021DifferentiallyCam}
+Jayadev Acharya, Ziteng Sun, and Huanyu Zhang.
+\newblock {Differentially Private Assouad, Fano, and Le Cam}.
+\newblock In \emph{Proceedings of the 32nd {International} {Conference} on
+  {Algorithmic} {Learning} {Theory}}, volume 132, pages 48--78,
+  2021{\natexlab{d}}.
+
+\bibitem[Aliakbarpour et~al.(2018)Aliakbarpour, Diakonikolas, and
+  Rubinfeld]{Aliakbarpour2018DPgof}
+Maryam Aliakbarpour, Ilias Diakonikolas, and Ronitt Rubinfeld.
+\newblock Differentially private identity and equivalence testing of discrete
+  distributions.
+\newblock In \emph{Proceedings of the 35th International Conference on Machine
+  Learning}, volume~80, pages 169--178, 11 2018.
+
+\bibitem[Aliakbarpour et~al.(2019)Aliakbarpour, Diakonikolas, Kane, and
+  Rubinfeld]{Aliakbarpour2019PrivatePermutations}
+Maryam Aliakbarpour, Ilias Diakonikolas, Daniel Kane, and Ronitt Rubinfeld.
+\newblock Private testing of distributions via sample permutations.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~32, 2019.
+
+\bibitem[{Apple Differential Privacy Team}(2017)]{Apple2017Privacy}
+{Apple Differential Privacy Team}.
+\newblock Learning with privacy at scale.
+\newblock \emph{Apple Machine Learning Journal}, 1, 2017.
+
+\bibitem[Arias-Castro et~al.(2018)Arias-Castro, Pelletier, and
+  Saligrama]{Arias-Castro2018RememberDimension}
+Ery Arias-Castro, Bruno Pelletier, and Venkatesh Saligrama.
+\newblock {Remember the curse of dimensionality: the case of goodness-of-fit
+  testing in arbitrary dimension}.
+\newblock \emph{Journal of Nonparametric Statistics}, 30\penalty0 (2):\penalty0
+  448–471, 2018.
+\newblock ISSN 10290311.
+
+\bibitem[Autin et~al.(2010)Autin, Le~Pennec, and Tribouley]{Autin2010Wavlet}
+Florent Autin, Erwan Le~Pennec, and Karine Tribouley.
+\newblock Thresholding methods to estimate copula density.
+\newblock \emph{Journal of Multivariate Analysis}, 101\penalty0 (1):\penalty0
+  200--222, 2010.
+
+\bibitem[Baraud(2002)]{Baraud2002minimax}
+Yannick Baraud.
+\newblock Non-asymptotic minimax rates of testing in signal detection.
+\newblock \emph{Bernoulli}, 8\penalty0 (5):\penalty0 577--606, 2002.
+
+\bibitem[Batu et~al.(2000)Batu, Fortnow, Rubinfeld, Smith, and
+  White]{Batu2000NonprivateTwosample}
+Tuğkan Batu, Lance Fortnow, Ronitt Rubinfeld, Warren~D. Smith, and Patrick
+  White.
+\newblock Testing that distributions are close.
+\newblock \emph{Annual Symposium on Foundations of Computer Science}, 2000.
+\newblock ISSN 02725428.
+
+\bibitem[Berrett and Butucea(2020)]{Berrett2020Interactive}
+Thomas Berrett and Cristina Butucea.
+\newblock Locally private non-asymptotic testing of discrete distributions is
+  faster using interactive mechanisms.
+\newblock In H~Larochelle, M~Ranzato, R~Hadsell, M~F Balcan, and H~Lin,
+  editors, \emph{Advances in Neural Information Processing Systems}, volume~33,
+  pages 3164--3173, 2020.
+
+\bibitem[Berrett et~al.(2021)Berrett, Gy\"{o}rfi, and
+  Walk]{Berret2021Classification}
+Thomas~B Berrett, L\'{a}szl\'{o} Gy\"{o}rfi, and Harro Walk.
+\newblock Strongly universally consistent nonparametric regression and
+  classification with privatised data.
+\newblock \emph{Electronic Journal of Statistics}, 15:\penalty0 2430--2453,
+  2021.
+
+\bibitem[Cai et~al.(2017)Cai, Daskalakis, and Kamath]{Cai2017DPGofPrivit}
+Bryan Cai, Constantinos Daskalakis, and Gautam Kamath.
+\newblock Priv'it: Private and sample efficient identity testing.
+\newblock In \emph{Proceedings of the 34th International Conference on Machine
+  Learning}, volume~70, pages 635--644, 11 2017.
+
+\bibitem[Cai et~al.(2021)Cai, Wang, and Zhang]{Tony2021DP}
+T~Tony Cai, Yichen Wang, and Linjun Zhang.
+\newblock The cost of privacy: Optimal rates of convergence for parameter
+  estimation with differential privacy.
+\newblock \emph{The Annals of Statistics}, 49\penalty0 (5):\penalty0
+  2825--2850, 2021.
+
+\bibitem[Chan et~al.(2014{\natexlab{a}})Chan, Diakonikolas, Valiant, and
+  Valiant]{Chan2014Nonprivate}
+Siu-On Chan, Ilias Diakonikolas, Gregory Valiant, and Paul Valiant.
+\newblock Optimal algorithms for testing closeness of discrete distributions.
+\newblock \emph{Proceedings of the Twenty-Fifth Annual ACM-SIAM Symposium on
+  Discrete Algorithms}, pages 1193--1203, 2014{\natexlab{a}}.
+
+\bibitem[Chan et~al.(2014{\natexlab{b}})Chan, Diakonikolas, Valiant, and
+  Valiant]{chan2014optimal}
+Siu-On Chan, Ilias Diakonikolas, Paul Valiant, and Gregory Valiant.
+\newblock Optimal algorithms for testing closeness of discrete distributions.
+\newblock In \emph{Proceedings of the twenty-fifth annual ACM-SIAM symposium on
+  Discrete algorithms}, pages 1193--1203. SIAM, 2014{\natexlab{b}}.
+
+\bibitem[Couch et~al.(2019)Couch, Kazan, Shi, Bray, and
+  Groce]{Couch2019NonparamTwosample}
+Simon Couch, Zeki Kazan, Kaiyan Shi, Andrew Bray, and Adam Groce.
+\newblock Differentially private nonparametric hypothesis testing.
+\newblock In \emph{Proceedings of the 2019 ACM SIGSAC Conference on Computer
+  and Communications Security}, CCS '19, page 737–751, New York, NY, USA,
+  2019. Association for Computing Machinery.
+\newblock ISBN 9781450367479.
+
+\bibitem[Diakonikolas and Kane(2016)]{Diakonikolas2016Nonprivate}
+Ilias Diakonikolas and Daniel~M Kane.
+\newblock A new approach for testing properties of discrete distributions.
+\newblock \emph{2016 IEEE 57th Annual Symposium on Foundations of Computer
+  Science (FOCS)}, pages 685--694, 2016.
+
+\bibitem[Diakonikolas et~al.(2018)Diakonikolas, Gouleakis, Peebles, and
+  Price]{Diakonikolas2018Nonprivate}
+Ilias Diakonikolas, Themis Gouleakis, John Peebles, and Eric Price.
+\newblock Sample-optimal identity testing with high probability.
+\newblock \emph{45th International Colloquium on Automata, Languages, and
+  Programming, ICALP 2018, July 9-13, 2018, Prague, Czech Republic},
+  107:\penalty0 41:1--41:14, 2018.
+
+\bibitem[Ding et~al.(2017)Ding, Kulkarni, and
+  Yekhanin]{Ding2017CollectingPrivately}
+Bolin Ding, Janardhan Kulkarni, and Sergey Yekhanin.
+\newblock Collecting telemetry data privately.
+\newblock In \emph{Proceedings of the 31st International Conference on Neural
+  Information Processing Systems}, pages 3574--3583, 2017.
+\newblock ISBN 9781510860964.
+
+\bibitem[Ding et~al.(2018)Ding, Nori, Li, and Allen]{Ding2018TwosampleMean}
+Bolin Ding, Harsha Nori, Paul Li, and Joshua Allen.
+\newblock Comparing {Population} {Means} {Under} {Local} {Differential}
+  {Privacy}: {With} {Significance} and {Power}.
+\newblock \emph{Proceedings of the AAAI Conference on Artificial Intelligence},
+  32\penalty0 (1), April 2018.
+
+\bibitem[Dubois et~al.(2023)Dubois, Berrett, and Butucea]{Dubois2022}
+Amandine Dubois, Thomas~B. Berrett, and Cristina Butucea.
+\newblock Goodness-of-fit testing for h{\"o}lder continuous densities under
+  local differential privacy.
+\newblock In Denis Belomestny, Cristina Butucea, Enno Mammen, Eric Moulines,
+  Markus Rei{\ss}, and Vladimir~V. Ulyanov, editors, \emph{Foundations of
+  Modern Statistics}, pages 53--119, Cham, 2023. Springer International
+  Publishing.
+\newblock ISBN 978-3-031-30114-8.
+
+\bibitem[Duchi et~al.(2013)Duchi, Jordan, and Wainwright]{duchi2013local}
+John~C. Duchi, Michael~I. Jordan, and Martin~J. Wainwright.
+\newblock Local privacy and minimax bounds: sharp rates for probability
+  estimation.
+\newblock In \emph{Proceedings of the 26th International Conference on Neural
+  Information Processing Systems - Volume 1}, NIPS'13, page 1529–1537, Red
+  Hook, NY, USA, 2013. Curran Associates Inc.
+
+\bibitem[Duchi et~al.(2018)Duchi, Jordan, and
+  Wainwright]{Duchi2018MinimaxEstimation}
+John~C Duchi, Michael~I Jordan, and Martin~J Wainwright.
+\newblock {Minimax Optimal Procedures for Locally Private Estimation}.
+\newblock \emph{Journal of the American Statistical Association}, 113\penalty0
+  (521):\penalty0 182--201, 2018.
+
+\bibitem[Dwork and Roth(2013)]{Dwork2014Book}
+Cynthia Dwork and Aaron Roth.
+\newblock The algorithmic foundations of differential privacy.
+\newblock \emph{Foundations and Trends in Theoretical Computer Science}, 9,
+  2013.
+\newblock ISSN 15513068.
+
+\bibitem[Dwork et~al.(2006)Dwork, McSherry, Nissim, and
+  Adam]{CynthiaDwork2006CalibratingAnalysis}
+Cynthia Dwork, Frank McSherry, Kobbi Nissim, and Smith Adam.
+\newblock {Calibrating Noise to Sensitivity in Private Data Analysis}.
+\newblock In \emph{Theory of Cryptography}, pages 265--284. Springer Berlin
+  Heidelberg, 2006.
+\newblock ISBN 978-3-540-32732-5.
+
+\bibitem[Erlingsson et~al.(2014)Erlingsson, Pihur, and
+  Korolova]{erlingsson_rappor_2014}
+{\'U}lfar Erlingsson, Vasyl Pihur, and Aleksandra Korolova.
+\newblock {RAPPOR}: {Randomized} {Aggregatable} {Privacy}-{Preserving}
+  {Ordinal} {Response}.
+\newblock In \emph{Proceedings of the 2014 {ACM} {SIGSAC} {Conference} on
+  {Computer} and {Communications} {Security}}, pages 1054--1067, November 2014.
+\newblock ISBN 978-1-4503-2957-6.
+
+\bibitem[Fromont and Laurent(2006)]{Fromont2006AdaptiveModel}
+Magalie Fromont and Béatrice Laurent.
+\newblock Adaptive goodness-of-fit tests in a density model.
+\newblock \emph{The Annals of Statistics}, 34\penalty0 (2):\penalty0 680--720,
+  2006.
+
+\bibitem[Gaboardi and Rogers(2018)]{Gaboardi2018LDPChisq}
+Marco Gaboardi and Ryan Rogers.
+\newblock Local private hypothesis testing: Chi-square tests.
+\newblock In \emph{Proceedings of the 35th International Conference on Machine
+  Learning}, volume~80, pages 1626--1635, 11 2018.
+
+\bibitem[Gaboardi et~al.(2016)Gaboardi, Lim, Rogers, and
+  Vadhan]{Gaboardi2016DPChisq}
+Marco Gaboardi, Hyun Lim, Ryan Rogers, and Salil Vadhan.
+\newblock Differentially private chi-squared hypothesis testing: Goodness of
+  fit and independence testing.
+\newblock In Maria~Florina Balcan and Kilian~Q Weinberger, editors,
+  \emph{Proceedings of The 33rd International Conference on Machine Learning},
+  volume~48, pages 2111--2120, 11 2016.
+
+\bibitem[Ghosh et~al.(2009)Ghosh, Roughgarden, and Sundararajan]{ghosh2009}
+Arpita Ghosh, Tim Roughgarden, and Mukund Sundararajan.
+\newblock Universally utility-maximizing privacy mechanisms.
+\newblock In \emph{Proceedings of the Forty-First Annual ACM Symposium on
+  Theory of Computing}, STOC '09, page 351–360, New York, NY, USA, 2009.
+  Association for Computing Machinery.
+\newblock ISBN 9781605585062.
+
+\bibitem[Giné and Nickl(2015)]{Gine2015Besov}
+Evarist Giné and Richard Nickl.
+\newblock \emph{Mathematical Foundations of Infinite-Dimensional Statistical
+  Models}.
+\newblock Cambridge University Press, 2015.
+
+\bibitem[Goldreich and Ron(2011)]{Goldreich2000Nonprivate}
+Oded Goldreich and Dana Ron.
+\newblock On testing expansion in bounded-degree graphs.
+\newblock \emph{Lecture Notes in Computer Science (including subseries Lecture
+  Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)}, 6650
+  LNCS, 2011.
+\newblock ISSN 03029743.
+
+\bibitem[Gretton et~al.(2009)Gretton, Fukumizu, Harchaoui, and
+  Sriperumbudur]{Gretton2009FastKernel}
+Arthur Gretton, Kenji Fukumizu, Zaid Harchaoui, and Bharath~K Sriperumbudur.
+\newblock A fast, consistent kernel two-sample test.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~22, 2009.
+
+\bibitem[Gretton et~al.(2012)Gretton, Borgwardt, Rasch, Sch\"{o}lkopf, and
+  Smola]{Gretton2012ATest}
+Arthur Gretton, Karsten~M Borgwardt, Malte~J Rasch, Bernhard Sch\"{o}lkopf, and
+  Alexander Smola.
+\newblock A kernel two-sample test.
+\newblock \emph{Journal of Machine Learning Research}, 13:\penalty0 723--773,
+  2012.
+
+\bibitem[Harchaoui et~al.(2009)Harchaoui, Vallet, Lung-Yut-Fong, and
+  Cappe]{Harchaoui2009ASegmentation}
+Zaid Harchaoui, Felicien Vallet, Alexandre Lung-Yut-Fong, and Olivier Cappe.
+\newblock A regularized kernel-based approach to unsupervised audio
+  segmentation.
+\newblock In \emph{2009 IEEE International Conference on Acoustics, Speech and
+  Signal Processing}, pages 1665--1668, 2009.
+
+\bibitem[Hemerik and Goeman(2018)]{hemerik_exact_2018}
+Jesse Hemerik and Jelle Goeman.
+\newblock Exact testing with random permutations.
+\newblock \emph{TEST}, 27\penalty0 (4):\penalty0 811--825, 2018.
+\newblock ISSN 1863-8260.
+
+\bibitem[Homer et~al.(2008)Homer, Szelinger, Redman, Duggan, Tembe, Muehling,
+  Pearson, Stephan, Nelson, and Craig]{homer2008resolving}
+Nils Homer, Szabolcs Szelinger, Margot Redman, David Duggan, Waibhav Tembe,
+  Jill Muehling, John~V. Pearson, Dietrich~A. Stephan, Stanley~F. Nelson, and
+  David~W. Craig.
+\newblock {Resolving Individuals Contributing Trace Amounts of DNA to Highly
+  Complex Mixtures Using High-Density SNP Genotyping Microarrays}.
+\newblock \emph{PLoS Genetics}, 4\penalty0 (8):\penalty0 e1000167, August 2008.
+\newblock ISSN 1553-7404.
+
+\bibitem[Ingster(1993)]{Ingster1993AsymptoticallyAlternatives}
+Yu~Ingster.
+\newblock {Asymptotically minimax hypothesis testing for nonparametric
+  alternatives}.
+\newblock \emph{Mathematical Methods of Statistics}, 2\penalty0 (2):\penalty0
+  85--114, 1993.
+
+\bibitem[Ingster(2000)]{Ingster2000AdaptiveTests}
+Yu~Ingster.
+\newblock {Adaptive chi-square tests}.
+\newblock \emph{Journal of Mathematical Sciences}, 99:\penalty0 1110--1119, 9
+  2000.
+
+\bibitem[Ingster(1994)]{Ingster1994Bin}
+Yu~I. Ingster.
+\newblock Minimax detection of a signal in $\ell_p$ metrics.
+\newblock \emph{Journal of Mathematical Sciences}, 68:\penalty0 503--515, 1994.
+\newblock ISSN 10721964.
+
+\bibitem[Inusah and Kozubowski(2006)]{inusah_discrete_2006}
+Seidu Inusah and Tomasz~J. Kozubowski.
+\newblock A discrete analogue of the {Laplace} distribution.
+\newblock \emph{Journal of Statistical Planning and Inference}, 136\penalty0
+  (3):\penalty0 1090--1102, March 2006.
+\newblock ISSN 0378-3758.
+
+\bibitem[Johnson and Shmatikov(2013)]{Johnson2013PrivacyStudies}
+Aaron Johnson and Vitaly Shmatikov.
+\newblock Privacy-preserving data exploration in genome-wide association
+  studies.
+\newblock In \emph{Proceedings of the 19th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '13, page 1079–1087, New York,
+  NY, USA, 2013. Association for Computing Machinery.
+\newblock ISBN 9781450321747.
+
+\bibitem[Joseph et~al.(2019)Joseph, Mao, Neel, and
+  Roth]{Joseph2019Interactivity}
+Matthew Joseph, Jieming Mao, Seth Neel, and Aaron Roth.
+\newblock The role of interactivity in local differential privacy.
+\newblock \emph{2019 IEEE 60th Annual Symposium on Foundations of Computer
+  Science (FOCS)}, pages 94--105, 2019.
+
+\bibitem[Kasiviswanathan et~al.(2011)Kasiviswanathan, Lee, Nissim,
+  Raskhodnikova, and Smith]{Kasiviswanathan2008WhatPrivately}
+Shiva~Prasad Kasiviswanathan, Homin~K Lee, Kobbi Nissim, Sofya Raskhodnikova,
+  and Adam Smith.
+\newblock What can we learn privately?
+\newblock \emph{SIAM Journal on Computing}, 40\penalty0 (3):\penalty0 793--826,
+  2011.
+
+\bibitem[Kim(2020)]{kim_multinomial_2020}
+Ilmun Kim.
+\newblock Multinomial goodness-of-fit based on {U}-statistics:
+  {High}-dimensional asymptotic and minimax optimality.
+\newblock \emph{Journal of Statistical Planning and Inference}, 205:\penalty0
+  74--91, 2020.
+\newblock ISSN 0378-3758.
+
+\bibitem[Kim and Schrab(2023)]{kim2023dp}
+Ilmun Kim and Antonin Schrab.
+\newblock {Differentially Private Permutation Tests: Applications to Kernel
+  Methods}.
+\newblock \emph{arXiv preprint arXiv:2310.19043}, 2023.
+
+\bibitem[Kim et~al.(2019)Kim, Lee, and Lei]{kim2019}
+Ilmun Kim, Ann~B. Lee, and Jing Lei.
+\newblock Global and local two-sample tests via regression.
+\newblock \emph{Electronic Journal of Statistics}, 13\penalty0 (2):\penalty0
+  5253--5305, 2019.
+
+\bibitem[Kim et~al.(2021)Kim, Ramdas, Singh, and Wasserman]{kim2021}
+Ilmun Kim, Aaditya Ramdas, Aarti Singh, and Larry Wasserman.
+\newblock Classification accuracy as a proxy for two-sample testing.
+\newblock \emph{The Annals of Statistics}, 49\penalty0 (1):\penalty0 411--434,
+  2021.
+
+\bibitem[Kim et~al.(2022{\natexlab{a}})Kim, Balakrishnan, and
+  Wasserman]{kim_minimax_2022}
+Ilmun Kim, Sivaraman Balakrishnan, and Larry Wasserman.
+\newblock Minimax optimality of permutation tests.
+\newblock \emph{The Annals of Statistics}, 50\penalty0 (1):\penalty0 225--251,
+  February 2022{\natexlab{a}}.
+\newblock ISSN 0090-5364, 2168-8966.
+
+\bibitem[Kim et~al.(2022{\natexlab{b}})Kim, Neykov, Balakrishnan, and
+  Wasserman]{kim2022local}
+Ilmun Kim, Matey Neykov, Sivaraman Balakrishnan, and Larry Wasserman.
+\newblock Local permutation tests for conditional independence.
+\newblock \emph{The Annals of Statistics}, 50\penalty0 (6):\penalty0
+  3388--3414, 2022{\natexlab{b}}.
+
+\bibitem[Kohout and Pevný(2018)]{Kohout2018NetworkTest}
+Jan Kohout and Tomáš Pevný.
+\newblock Network traffic fingerprinting based on approximated kernel
+  two-sample test.
+\newblock \emph{IEEE Transactions on Information Forensics and Security},
+  13:\penalty0 788--801, 2018.
+
+\bibitem[Lalanne et~al.(2023)Lalanne, Garivier, and Gribonval]{Lalanne2023on}
+Cl{\'e}ment Lalanne, Aur{\'e}lien Garivier, and R{\'e}mi Gribonval.
+\newblock {On the Statistical Complexity of Estimation and Testing under
+  Privacy Constraints}.
+\newblock \emph{Transactions on Machine Learning Research}, 2023.
+\newblock ISSN 2835-8856.
+
+\bibitem[Lam-Weil et~al.(2022)Lam-Weil, Laurent, and
+  Loubes]{Lam-Weil2021MinimaxConstraint}
+Joseph Lam-Weil, Béatrice Laurent, and Jean-Michel Loubes.
+\newblock Minimax optimal goodness-of-fit testing for densities and
+  multinomials under a local differential privacy constraint.
+\newblock \emph{Bernoulli}, 28\penalty0 (1):\penalty0 579--600, 2022.
+
+\bibitem[McSherry and Talwar(2007)]{mcsherry_mechanism_2007}
+Frank McSherry and Kunal Talwar.
+\newblock Mechanism {Design} via {Differential} {Privacy}.
+\newblock In \emph{48th {Annual} {IEEE} {Symposium} on {Foundations} of
+  {Computer} {Science} ({FOCS}'07)}, pages 94--103, October 2007.
+\newblock ISSN: 0272-5428.
+
+\bibitem[Near(2018)]{Near2017Uber}
+Joe Near.
+\newblock Differential privacy at scale: Uber and berkeley collaboration.
+\newblock In \emph{Enigma 2018 (Enigma 2018)}, Santa Clara, CA, January 2018.
+  USENIX Association.
+
+\bibitem[Neykov et~al.(2021)Neykov, Balakrishnan, and
+  Wasserman]{neykov2021minimax}
+Matey Neykov, Sivaraman Balakrishnan, and Larry Wasserman.
+\newblock {Minimax Optimal Conditional Independence Testing}.
+\newblock \emph{The Annals of Statistics}, 49\penalty0 (4):\penalty0
+  2151--2177, 2021.
+
+\bibitem[Rabin et~al.(2019)Rabin, Golan, Singer, and
+  Kleper]{Rabin2019ModelingTests}
+N.~Rabin, M.~Golan, G.~Singer, and D.~Kleper.
+\newblock {Modeling and Analysis of Students’ Performance Trajectories using
+  Diffusion Maps and Kernel Two-Sample Tests}.
+\newblock \emph{Engineering Applications of Artificial Intelligence}, 85, 2019.
+\newblock ISSN 09521976.
+
+\bibitem[Raj et~al.(2020)Raj, Law, Sejdinovic, and Park]{Raj2020ATest}
+Anant Raj, Ho~Chung~Leon Law, Dino Sejdinovic, and Mijung Park.
+\newblock A {Differentially} {Private} {Kernel} {Two}-{Sample} {Test}.
+\newblock In Ulf Brefeld, Elisa Fromont, Andreas Hotho, Arno Knobbe, Marloes
+  Maathuis, and Céline Robardet, editors, \emph{Machine {Learning} and
+  {Knowledge} {Discovery} in {Databases}}, pages 697--724, Cham, 2020. Springer
+  International Publishing.
+\newblock ISBN 978-3-030-46150-8.
+
+\bibitem[Ramdas et~al.(2023)Ramdas, Barber, Cand{\`e}s, and
+  Tibshirani]{ramdas2023permutation}
+Aaditya Ramdas, Rina~Foygel Barber, Emmanuel~J Cand{\`e}s, and Ryan~J
+  Tibshirani.
+\newblock Permutation tests using arbitrary permutation distributions.
+\newblock \emph{Sankhya A}, 85\penalty0 (2):\penalty0 1156--1177, 2023.
+
+\bibitem[Rogers and Kifer(2017)]{Kifer2017DPChisq}
+Ryan Rogers and Daniel Kifer.
+\newblock A new class of private chi-square hypothesis tests.
+\newblock In \emph{Proceedings of the 20th International Conference on
+  Artificial Intelligence and Statistics}, volume~54, pages 991--1000, 11 2017.
+
+\bibitem[Schrab et~al.(2023)Schrab, Kim, Albert, Laurent, Guedj, and
+  Gretton]{Schrab2021MMDTest}
+Antonin Schrab, Ilmun Kim, Mélisande Albert, Béatrice Laurent, Benjamin
+  Guedj, and Arthur Gretton.
+\newblock {MMD Aggregated Two-Sample Test}.
+\newblock \emph{Journal of Machine Learning Research}, 24\penalty0
+  (194):\penalty0 1--81, 2023.
+
+\bibitem[Sheffet(2018)]{Sheffet2018LDP}
+Or~Sheffet.
+\newblock Locally private hypothesis testing.
+\newblock In \emph{Proceedings of the 35th International Conference on Machine
+  Learning}, volume~80, pages 4605--4614, 11 2018.
+
+\bibitem[Student(1908)]{Student1908Twosample}
+Student.
+\newblock {The Probable Error of a Mean}.
+\newblock \emph{Biometrika}, 6\penalty0 (1):\penalty0 1--25, 1908.
+\newblock ISSN 00063444.
+
+\bibitem[Szekely and Rizzo(2004)]{Szekely2004Energy}
+Gabor Szekely and Maria Rizzo.
+\newblock Testing for equal distributions in high dimension.
+\newblock \emph{InterStat}, 5, 11 2004.
+
+\bibitem[Székely and Rizzo(2005)]{Szekely2005Energy}
+Gábor~J. Székely and Maria~L. Rizzo.
+\newblock A new test for multivariate normality.
+\newblock \emph{Journal of Multivariate Analysis}, 93\penalty0 (1):\penalty0
+  58--80, 2005.
+\newblock ISSN 0047-259X.
+
+\bibitem[Tang and Yang(2023)]{tang2023Besov}
+Rong Tang and Yun Yang.
+\newblock {Minimax Nonparametric Two-Sample Test under Adversarial Losses}.
+\newblock In \emph{Proceedings of The 26th International Conference on
+  Artificial Intelligence and Statistics}, volume 206, pages 6132--6165, 2023.
+
+\bibitem[Task and Clifton(2016)]{Task2016Wilcoxon}
+Christine Task and Chris Clifton.
+\newblock Differentially private significance testing on paired-sample data.
+\newblock In \emph{Proceedings of the 2016 SIAM International Conference on
+  Data Mining (SDM)}, pages 153--161, 2016.
+
+\bibitem[Uhler et~al.(2013)Uhler, Slavkovic, and
+  Fienberg]{Uhler2013PrivacyStudies}
+Caroline Uhler, Aleksandra~B. Slavkovic, and Stephen~E. Fienberg.
+\newblock {Privacy-Preserving Data Sharing for Genome-Wide Association
+  Studies}.
+\newblock \emph{Journal of Privacy and Confidentiality}, 5\penalty0 (1), 2013.
+
+\bibitem[Valiant and Valiant(2014)]{Valiant2017Nonprivate}
+Gregory Valiant and Paul Valiant.
+\newblock {An Automatic Inequality Prover and Instance Optimal Identity
+  Testing}.
+\newblock In \emph{2014 IEEE 55th Annual Symposium on Foundations of Computer
+  Science}, pages 51--60, 2014.
+
+\bibitem[van~der Vaart(1998)]{van_der_vaart_asymptotic_1998}
+A.~W. van~der Vaart.
+\newblock \emph{Asymptotic {Statistics}}.
+\newblock Cambridge {Series} in {Statistical} and {Probabilistic}
+  {Mathematics}. Cambridge University Press, Cambridge, 1998.
+\newblock ISBN 978-0-521-78450-4.
+
+\bibitem[Vu and Slavkovic(2009)]{Vu2009DifferentialEvaluations}
+Duy Vu and Aleksandra Slavkovic.
+\newblock Differential privacy for clinical trial data: Preliminary
+  evaluations.
+\newblock In \emph{2009 IEEE International Conference on Data Mining
+  Workshops}, pages 138--143, 2009.
+
+\bibitem[Wang et~al.(2015)Wang, Lee, and Kifer]{Wang2015DPChisq}
+Yue Wang, Jaewoo Lee, and Daniel Kifer.
+\newblock Revisiting differentially private hypothesis tests for categorical
+  data.
+\newblock \emph{arXiv preprint arXiv:1511.03376}, 2015.
+
+\bibitem[Waudby-Smith et~al.(2022)Waudby-Smith, Wu, and
+  Ramdas]{Waudby-Smith2022LDPTwosample}
+Ian Waudby-Smith, Zhiwei~Steven Wu, and Aaditya Ramdas.
+\newblock Locally private nonparametric confidence intervals and sequences.
+\newblock \emph{arXiv preprint arXiv:2202.08728}, 2 2022.
+
+\bibitem[Yu et~al.(2014)Yu, Fienberg, Slavković, and Uhler]{Yu2014Chisq}
+Fei Yu, Stephen~E. Fienberg, Aleksandra~B. Slavković, and Caroline Uhler.
+\newblock Scalable privacy-preserving data sharing methodology for genome-wide
+  association studies.
+\newblock \emph{Journal of Biomedical Informatics}, 50:\penalty0 133--141,
+  2014.
+\newblock ISSN 15320464.
+
+\end{thebibliography}
